@@ -1,0 +1,1094 @@
+{
+  "offlineZipIntegrity": true,
+  "searchIndexEntries": 49,
+  "mode": "release",
+  "chapters": 46,
+  "appendices": 3,
+  "pages": 52,
+  "equations": 1121,
+  "localLinksChecked": 3766,
+  "externalReferenceURLs": 113,
+  "numericalChecks": 141,
+  "numericalResults": [
+    {
+      "name": "04 loaded divider voltage",
+      "actual": 6,
+      "expected": 6,
+      "passed": true
+    },
+    {
+      "name": "04 load power mW",
+      "actual": 9,
+      "expected": 9,
+      "passed": true
+    },
+    {
+      "name": "04 source power mW",
+      "actual": 36.00000000000001,
+      "expected": 36,
+      "passed": true
+    },
+    {
+      "name": "04 superposition power mW",
+      "actual": 9.000000000000002,
+      "expected": 9,
+      "passed": true
+    },
+    {
+      "name": "02 RC at tau",
+      "actual": 2.08599784413424,
+      "expected": 2.085998,
+      "passed": true
+    },
+    {
+      "name": "02 t90/tau",
+      "actual": 2.302585092994046,
+      "expected": 2.302585,
+      "passed": true
+    },
+    {
+      "name": "03 series impedance ohm",
+      "actual": 1879.6354942005232,
+      "expected": 1879.635,
+      "passed": true
+    },
+    {
+      "name": "03 current mA",
+      "actual": 0.532018044501408,
+      "expected": 0.532018,
+      "passed": true
+    },
+    {
+      "name": "03 real power mW",
+      "actual": 0.28304315232399996,
+      "expected": 0.283043,
+      "passed": true
+    },
+    {
+      "name": "05 RC cutoff Hz",
+      "actual": 1591.5494309189537,
+      "expected": 1591.549,
+      "passed": true
+    },
+    {
+      "name": "05 lowpass magnitude at 10k",
+      "actual": 0.15717672547758985,
+      "expected": 0.157177,
+      "passed": true
+    },
+    {
+      "name": "05 attenuation dB",
+      "actual": -16.072235265805517,
+      "expected": -16.0722,
+      "passed": true
+    },
+    {
+      "name": "06 12bit LSB mV",
+      "actual": 0.8056640625,
+      "expected": 0.805664,
+      "passed": true
+    },
+    {
+      "name": "07 flight time ns",
+      "actual": 0.6666666666666667,
+      "expected": 0.6666667,
+      "passed": true
+    },
+    {
+      "name": "07 loaded voltage",
+      "actual": 1.3333333333333333,
+      "expected": 1.3333333,
+      "passed": true
+    },
+    {
+      "name": "07 plate C pF",
+      "actual": 35.416,
+      "expected": 35.416,
+      "passed": true
+    },
+    {
+      "name": "08 photon edge nm",
+      "actual": 826.6666666666666,
+      "expected": 826.6667,
+      "passed": true
+    },
+    {
+      "name": "08 Fermi occupation",
+      "actual": 0.04742587317756678,
+      "expected": 0.04742587,
+      "passed": true
+    },
+    {
+      "name": "08 Boltzmann relative excess",
+      "actual": 0.04978706836786406,
+      "expected": 0.04978707,
+      "passed": true
+    },
+    {
+      "name": "09 resistivity ohm cm",
+      "actual": 0.41614648356221395,
+      "expected": 0.4161465,
+      "passed": true
+    },
+    {
+      "name": "09 diffusion coefficient",
+      "actual": 31.020000000000003,
+      "expected": 31.02,
+      "passed": true
+    },
+    {
+      "name": "09 diffusion length um",
+      "actual": 55.69560126257728,
+      "expected": 55.6956,
+      "passed": true
+    },
+    {
+      "name": "09 electron diffusion J",
+      "actual": -4.005,
+      "expected": -4.005,
+      "passed": true
+    },
+    {
+      "name": "10 built-in voltage",
+      "actual": 0.714261895846753,
+      "expected": 0.7142619,
+      "passed": true
+    },
+    {
+      "name": "10 depletion width um",
+      "actual": 0.4298405255760846,
+      "expected": 0.4298405,
+      "passed": true
+    },
+    {
+      "name": "10 dynamic resistance",
+      "actual": 25.85,
+      "expected": 25.85,
+      "passed": true
+    },
+    {
+      "name": "10 decade voltage mV",
+      "actual": 59.52182465389609,
+      "expected": 59.52183,
+      "passed": true
+    },
+    {
+      "name": "11 collector mA",
+      "actual": 0.9900990099009901,
+      "expected": 0.990099,
+      "passed": true
+    },
+    {
+      "name": "11 VCE",
+      "actual": 2.01980198019802,
+      "expected": 2.019802,
+      "passed": true
+    },
+    {
+      "name": "11 gm mS",
+      "actual": 38.3017025106766,
+      "expected": 38.3017,
+      "passed": true
+    },
+    {
+      "name": "11 rpi ohm",
+      "actual": 7755.000000000001,
+      "expected": 7755,
+      "passed": true
+    },
+    {
+      "name": "12 saturation current mA",
+      "actual": 0.6400000000000001,
+      "expected": 0.64,
+      "passed": true
+    },
+    {
+      "name": "12 gm mS",
+      "actual": 1.5999999999999999,
+      "expected": 1.6,
+      "passed": true
+    },
+    {
+      "name": "12 triode current mA",
+      "actual": 0.15000000000000002,
+      "expected": 0.15,
+      "passed": true
+    },
+    {
+      "name": "13 device losses W",
+      "actual": 7,
+      "expected": 7,
+      "passed": true
+    },
+    {
+      "name": "13 driver power W",
+      "actual": 0.03,
+      "expected": 0.03,
+      "passed": true
+    },
+    {
+      "name": "13 EOT nm",
+      "actual": 0.975,
+      "expected": 0.975,
+      "passed": true
+    },
+    {
+      "name": "13 subthreshold mV dec",
+      "actual": 83.33055451545452,
+      "expected": 83.33055,
+      "passed": true
+    },
+    {
+      "name": "14 Scheil solid concentration",
+      "actual": 6062866266041592,
+      "expected": 6062866266000000,
+      "passed": true
+    },
+    {
+      "name": "14 resistivity after segregation",
+      "actual": 1.0295785820637442,
+      "expected": 1.02957858,
+      "passed": true
+    },
+    {
+      "name": "15 lithography CD nm",
+      "actual": 42.888888888888886,
+      "expected": 42.88889,
+      "passed": true
+    },
+    {
+      "name": "15 depth of focus nm",
+      "actual": 52.94924554183813,
+      "expected": 52.94925,
+      "passed": true
+    },
+    {
+      "name": "15 edge sigma nm",
+      "actual": 2.5,
+      "expected": 2.5,
+      "passed": true
+    },
+    {
+      "name": "16 oxide time first h",
+      "actual": 2.0000000000000004,
+      "expected": 2,
+      "passed": true
+    },
+    {
+      "name": "16 oxide time second h",
+      "actual": 6.000000000000001,
+      "expected": 6,
+      "passed": true
+    },
+    {
+      "name": "16 capacitance ratio",
+      "actual": 0.9523809523809523,
+      "expected": 0.95238095,
+      "passed": true
+    },
+    {
+      "name": "17 mask consumed nm",
+      "actual": 72,
+      "expected": 72,
+      "passed": true
+    },
+    {
+      "name": "17 stop loss nm",
+      "actual": 2.4000000000000004,
+      "expected": 2.4,
+      "passed": true
+    },
+    {
+      "name": "18 thermal spreading nm",
+      "actual": 20,
+      "expected": 20,
+      "passed": true
+    },
+    {
+      "name": "18 total sigma nm",
+      "actual": 25,
+      "expected": 25,
+      "passed": true
+    },
+    {
+      "name": "18 Gaussian peak",
+      "actual": 3989422804014327300,
+      "expected": 3989422804000000000,
+      "passed": true
+    },
+    {
+      "name": "19 CMP revised minutes",
+      "actual": 2.272727272727273,
+      "expected": 2.272727,
+      "passed": true
+    },
+    {
+      "name": "19 capillary MPa",
+      "actual": 1.44,
+      "expected": 1.44,
+      "passed": true
+    },
+    {
+      "name": "20 wire resistance ohm",
+      "actual": 93.74999999999999,
+      "expected": 93.75,
+      "passed": true
+    },
+    {
+      "name": "20 reduced cross section ohm",
+      "actual": 119.2368839427663,
+      "expected": 119.236884,
+      "passed": true
+    },
+    {
+      "name": "21 DRAM sharing V",
+      "actual": 0.5454545454545454,
+      "expected": 0.5454545,
+      "passed": true
+    },
+    {
+      "name": "21 degraded bitline mV",
+      "actual": 27.272727272727277,
+      "expected": 27.272727,
+      "passed": true
+    },
+    {
+      "name": "21 bandwidth GB/s",
+      "actual": 256,
+      "expected": 256,
+      "passed": true
+    },
+    {
+      "name": "22 DOE intercept",
+      "actual": 103,
+      "expected": 103,
+      "passed": true
+    },
+    {
+      "name": "22 DOE A coefficient",
+      "actual": 6,
+      "expected": 6,
+      "passed": true
+    },
+    {
+      "name": "22 DOE interaction coefficient",
+      "actual": 2,
+      "expected": 2,
+      "passed": true
+    },
+    {
+      "name": "22 combined uncertainty nm",
+      "actual": 0.3605551275463989,
+      "expected": 0.3605551,
+      "passed": true
+    },
+    {
+      "name": "23 Poisson yield",
+      "actual": 0.9048374180359595,
+      "expected": 0.9048374,
+      "passed": true
+    },
+    {
+      "name": "23 conditional yield",
+      "actual": 0.87318,
+      "expected": 0.87318,
+      "passed": true
+    },
+    {
+      "name": "23 zero failure upper bound",
+      "actual": 0.00993608194445772,
+      "expected": 0.009936082,
+      "passed": true
+    },
+    {
+      "name": "24 EWMA second",
+      "actual": 101.75,
+      "expected": 101.75,
+      "passed": true
+    },
+    {
+      "name": "24 EWMA third",
+      "actual": 101.3125,
+      "expected": 101.3125,
+      "passed": true
+    },
+    {
+      "name": "25 Arrhenius acceleration",
+      "actual": 9.763363774375152,
+      "expected": 9.763277903,
+      "passed": true
+    },
+    {
+      "name": "25 Weibull survival",
+      "actual": 0.7788007830714049,
+      "expected": 0.778800783,
+      "passed": true
+    },
+    {
+      "name": "25 Weibull tenth percentile h",
+      "actual": 324.59284597450124,
+      "expected": 324.592846,
+      "passed": true
+    },
+    {
+      "name": "26 parallel load ohm",
+      "actual": 2336.283185840708,
+      "expected": 2336.283186,
+      "passed": true
+    },
+    {
+      "name": "26 voltage gain",
+      "actual": -9.345132743362832,
+      "expected": -9.3451327,
+      "passed": true
+    },
+    {
+      "name": "26 output pole MHz",
+      "actual": 3.40615692601973,
+      "expected": 3.406181,
+      "passed": true
+    },
+    {
+      "name": "27 closed loop gain",
+      "actual": 9.99900009999,
+      "expected": 9.9990001,
+      "passed": true
+    },
+    {
+      "name": "27 slew V/us",
+      "actual": 1.2566370614359172,
+      "expected": 1.256637,
+      "passed": true
+    },
+    {
+      "name": "27 slew limited Hz",
+      "actual": 318309.8861837907,
+      "expected": 318309.886,
+      "passed": true
+    },
+    {
+      "name": "28 dynamic uW",
+      "actual": 1.296,
+      "expected": 1.296,
+      "passed": true
+    },
+    {
+      "name": "28 delay ps",
+      "actual": 41.4,
+      "expected": 41.4,
+      "passed": true
+    },
+    {
+      "name": "29 setup slack ns",
+      "actual": 1.0999999999999996,
+      "expected": 1.1,
+      "passed": true
+    },
+    {
+      "name": "29 frequency MHz",
+      "actual": 96.15384615384615,
+      "expected": 96.153846,
+      "passed": true
+    },
+    {
+      "name": "30 acquisition us",
+      "actual": 0.9010913347279287,
+      "expected": 0.9010913,
+      "passed": true
+    },
+    {
+      "name": "30 noise rms mV",
+      "actual": 0.46269991909840114,
+      "expected": 0.4626995,
+      "passed": true
+    },
+    {
+      "name": "30 ENOB",
+      "actual": 10.006644518272426,
+      "expected": 10.0066445,
+      "passed": true
+    },
+    {
+      "name": "31 inductor ripple A",
+      "actual": 0.47850000000000004,
+      "expected": 0.4785,
+      "passed": true
+    },
+    {
+      "name": "31 capacitor ripple mV",
+      "actual": 5.4375,
+      "expected": 5.4375,
+      "passed": true
+    },
+    {
+      "name": "31 LDO loss W",
+      "actual": 8.7,
+      "expected": 8.7,
+      "passed": true
+    },
+    {
+      "name": "32 UART wire bit/s",
+      "actual": 160000,
+      "expected": 160000,
+      "passed": true
+    },
+    {
+      "name": "32 buffer duration s",
+      "actual": 0.256,
+      "expected": 0.256,
+      "passed": true
+    },
+    {
+      "name": "32 timer rollover min",
+      "actual": 71.58278826666667,
+      "expected": 71.5827883,
+      "passed": true
+    },
+    {
+      "name": "33 scan ms",
+      "actual": 25.8,
+      "expected": 25.8,
+      "passed": true
+    },
+    {
+      "name": "33 outgoing defects ppm",
+      "actual": 202.18153880369186,
+      "expected": 202.181545,
+      "passed": true
+    },
+    {
+      "name": "34 assembly yield",
+      "actual": 0.9605465106125,
+      "expected": 0.96054651,
+      "passed": true
+    },
+    {
+      "name": "34 inductive voltage",
+      "actual": 0.2,
+      "expected": 0.2,
+      "passed": true
+    },
+    {
+      "name": "35 cascaded NF dB",
+      "actual": 2.748504037422235,
+      "expected": 2.7485,
+      "passed": true
+    },
+    {
+      "name": "35 photo output V",
+      "actual": 0.19799999999999998,
+      "expected": 0.198,
+      "passed": true
+    },
+    {
+      "name": "36 loaded voltage",
+      "actual": 0.9900990099009901,
+      "expected": 0.990099,
+      "passed": true
+    },
+    {
+      "name": "36 mean uncertainty mV",
+      "actual": 0.223606797749979,
+      "expected": 0.2236068,
+      "passed": true
+    },
+    {
+      "name": "36 rectangular uncertainty",
+      "actual": 0.17320508075688773,
+      "expected": 0.17320508,
+      "passed": true
+    },
+    {
+      "name": "37 temperature per code",
+      "actual": 0.040283203125,
+      "expected": 0.0402832,
+      "passed": true
+    },
+    {
+      "name": "37 acquisition us",
+      "actual": 0.36043653389117153,
+      "expected": 0.3604365,
+      "passed": true
+    },
+    {
+      "name": "37 interference mV",
+      "actual": 1.003758584740821,
+      "expected": 1.0037585,
+      "passed": true
+    },
+    {
+      "name": "37 calibration residual",
+      "actual": 0.20000000000000284,
+      "expected": 0.2,
+      "passed": true
+    },
+    {
+      "name": "38 p chart upper limit",
+      "actual": 0.03878297101099823,
+      "expected": 0.03878297,
+      "passed": true
+    },
+    {
+      "name": "38 two proportions z",
+      "actual": 4.35285750066007,
+      "expected": 4.3528575,
+      "passed": true
+    },
+    {
+      "name": "39 study hours after reserve",
+      "actual": 230.4,
+      "expected": 230.4,
+      "passed": true
+    },
+    {
+      "name": "01 average current, uA",
+      "actual": 55.968,
+      "expected": 55.968,
+      "passed": true
+    },
+    {
+      "name": "01 energy/day J",
+      "actual": 14.5069056,
+      "expected": 14.5069056,
+      "passed": true
+    },
+    {
+      "name": "01 lifetime hours",
+      "actual": 3573.47055460263,
+      "expected": 3573.471984,
+      "passed": true
+    },
+    {
+      "name": "01 slower sampling uA",
+      "actual": 31.984,
+      "expected": 31.984,
+      "passed": true
+    },
+    {
+      "name": "40 deliverable dies",
+      "actual": 516.2941246217918,
+      "expected": 516.29412462,
+      "passed": true
+    },
+    {
+      "name": "40 delivered cost",
+      "actual": 11.230475259219538,
+      "expected": 11.23047526,
+      "passed": true
+    },
+    {
+      "name": "41 beam stiffness N/m",
+      "actual": 1.2499999999999996,
+      "expected": 1.25,
+      "passed": true
+    },
+    {
+      "name": "41 displacement nm",
+      "actual": 20,
+      "expected": 20,
+      "passed": true
+    },
+    {
+      "name": "41 thickness ratio",
+      "actual": 1.1576250000000001,
+      "expected": 1.157625,
+      "passed": true
+    },
+    {
+      "name": "41 capacitor change fF",
+      "actual": 4.020100502512492,
+      "expected": 4.020100503,
+      "passed": true
+    },
+    {
+      "name": "42 mean speed m/s",
+      "actual": 0.005555555555555556,
+      "expected": 0.005555555555555556,
+      "passed": true
+    },
+    {
+      "name": "42 Reynolds",
+      "actual": 0.5555555555555556,
+      "expected": 0.5555555555555556,
+      "passed": true
+    },
+    {
+      "name": "42 residence seconds",
+      "actual": 0.9,
+      "expected": 0.9,
+      "passed": true
+    },
+    {
+      "name": "42 diffusion seconds",
+      "actual": 9,
+      "expected": 9,
+      "passed": true
+    },
+    {
+      "name": "42 Peclet",
+      "actual": 6666.666666666667,
+      "expected": 6666.666666666667,
+      "passed": true
+    },
+    {
+      "name": "43 Kd nM",
+      "actual": 25,
+      "expected": 25,
+      "passed": true
+    },
+    {
+      "name": "43 theta",
+      "actual": 0.6666666666666666,
+      "expected": 0.6666666666666666,
+      "passed": true
+    },
+    {
+      "name": "43 time 90%",
+      "actual": 153.50567286626972,
+      "expected": 153.5056729,
+      "passed": true
+    },
+    {
+      "name": "43 wash fraction",
+      "actual": 0.049787068367863944,
+      "expected": 0.0497870684,
+      "passed": true
+    },
+    {
+      "name": "44 Debye nm",
+      "actual": 3.0399999999999996,
+      "expected": 3.04,
+      "passed": true
+    },
+    {
+      "name": "44 current uA",
+      "actual": 0.1389440130885247,
+      "expected": 0.1389440131,
+      "passed": true
+    },
+    {
+      "name": "44 input noise uV",
+      "actual": 40,
+      "expected": 40,
+      "passed": true
+    },
+    {
+      "name": "45 Cottrell uA",
+      "actual": 0.13334001204696722,
+      "expected": 0.133340012,
+      "passed": true
+    },
+    {
+      "name": "45 pore nS",
+      "actual": 1.5707963267948968,
+      "expected": 1.5707963267948966,
+      "passed": true
+    },
+    {
+      "name": "45 photon SNR",
+      "actual": 89.44271909999159,
+      "expected": 89.4427191,
+      "passed": true
+    },
+    {
+      "name": "46 detection threshold uA",
+      "actual": 0.01974,
+      "expected": 0.01974,
+      "passed": true
+    },
+    {
+      "name": "46 LOD nM",
+      "actual": 0.0987,
+      "expected": 0.0987,
+      "passed": true
+    },
+    {
+      "name": "46 molecule count",
+      "actual": 24.08856304,
+      "expected": 24.08856304,
+      "passed": true
+    },
+    {
+      "name": "46 zero probability",
+      "actual": 0.7859315079205784,
+      "expected": 0.78593151,
+      "passed": true
+    },
+    {
+      "name": "46 at least one",
+      "actual": 0.3934693402873666,
+      "expected": 0.3934693403,
+      "passed": true
+    },
+    {
+      "name": "46 lambda for 95%",
+      "actual": 2.995732273553991,
+      "expected": 2.995732274,
+      "passed": true
+    },
+    {
+      "name": "interactive power default",
+      "actual": 0.25600000000000006,
+      "expected": 0.256,
+      "passed": true
+    },
+    {
+      "name": "interactive power alternative",
+      "actual": 0.23519999999999996,
+      "expected": 0.2352,
+      "passed": true
+    },
+    {
+      "name": "interactive zero switching",
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "name": "interactive defect yield",
+      "actual": 0.8869204367171575,
+      "expected": 0.8869204367,
+      "passed": true
+    },
+    {
+      "name": "interactive no defects",
+      "actual": 1,
+      "expected": 1,
+      "passed": true
+    }
+  ],
+  "chapterStructure": [
+    {
+      "file": "01-engineering-map.md",
+      "hanCharacters": 1954,
+      "references": 2
+    },
+    {
+      "file": "02-engineering-mathematics.md",
+      "hanCharacters": 1481,
+      "references": 3
+    },
+    {
+      "file": "03-complex-phasors.md",
+      "hanCharacters": 1181,
+      "references": 2
+    },
+    {
+      "file": "04-circuit-analysis.md",
+      "hanCharacters": 1388,
+      "references": 2
+    },
+    {
+      "file": "05-transients-filters.md",
+      "hanCharacters": 1131,
+      "references": 2
+    },
+    {
+      "file": "06-signals-sampling.md",
+      "hanCharacters": 1391,
+      "references": 3
+    },
+    {
+      "file": "07-fields-transmission-lines.md",
+      "hanCharacters": 1216,
+      "references": 2
+    },
+    {
+      "file": "08-solid-state-bands.md",
+      "hanCharacters": 1303,
+      "references": 3
+    },
+    {
+      "file": "09-carriers-transport.md",
+      "hanCharacters": 1012,
+      "references": 2
+    },
+    {
+      "file": "10-pn-junctions.md",
+      "hanCharacters": 1074,
+      "references": 2
+    },
+    {
+      "file": "11-bipolar-transistors.md",
+      "hanCharacters": 1039,
+      "references": 2
+    },
+    {
+      "file": "12-mos-capacitor-mosfet.md",
+      "hanCharacters": 1066,
+      "references": 3
+    },
+    {
+      "file": "13-advanced-power-devices.md",
+      "hanCharacters": 1232,
+      "references": 3
+    },
+    {
+      "file": "14-crystal-substrates.md",
+      "hanCharacters": 1514,
+      "references": 3
+    },
+    {
+      "file": "15-lithography-patterning.md",
+      "hanCharacters": 1319,
+      "references": 3
+    },
+    {
+      "file": "16-films-surfaces.md",
+      "hanCharacters": 1338,
+      "references": 3
+    },
+    {
+      "file": "17-etch-plasma.md",
+      "hanCharacters": 1309,
+      "references": 2
+    },
+    {
+      "file": "18-doping-thermal-budget.md",
+      "hanCharacters": 1223,
+      "references": 2
+    },
+    {
+      "file": "19-cleaning-cmp.md",
+      "hanCharacters": 1290,
+      "references": 4
+    },
+    {
+      "file": "20-interconnect-cmos.md",
+      "hanCharacters": 1279,
+      "references": 4
+    },
+    {
+      "file": "21-memory-technologies.md",
+      "hanCharacters": 1197,
+      "references": 5
+    },
+    {
+      "file": "22-metrology-doe.md",
+      "hanCharacters": 1127,
+      "references": 3
+    },
+    {
+      "file": "23-statistics-yield.md",
+      "hanCharacters": 1097,
+      "references": 2
+    },
+    {
+      "file": "24-control-mes.md",
+      "hanCharacters": 1192,
+      "references": 2
+    },
+    {
+      "file": "25-reliability-change.md",
+      "hanCharacters": 1143,
+      "references": 4
+    },
+    {
+      "file": "26-analog-small-signal.md",
+      "hanCharacters": 1081,
+      "references": 3
+    },
+    {
+      "file": "27-opamps-feedback.md",
+      "hanCharacters": 1069,
+      "references": 3
+    },
+    {
+      "file": "28-digital-cmos.md",
+      "hanCharacters": 1064,
+      "references": 3
+    },
+    {
+      "file": "29-hdl-timing-cdc.md",
+      "hanCharacters": 1046,
+      "references": 4
+    },
+    {
+      "file": "30-data-converters.md",
+      "hanCharacters": 1050,
+      "references": 3
+    },
+    {
+      "file": "31-power-electronics.md",
+      "hanCharacters": 1080,
+      "references": 4
+    },
+    {
+      "file": "32-microcontrollers-firmware.md",
+      "hanCharacters": 1167,
+      "references": 3
+    },
+    {
+      "file": "33-test-dft.md",
+      "hanCharacters": 1256,
+      "references": 4
+    },
+    {
+      "file": "34-packaging-chiplets.md",
+      "hanCharacters": 1185,
+      "references": 3
+    },
+    {
+      "file": "35-rf-opto-sensors.md",
+      "hanCharacters": 1058,
+      "references": 3
+    },
+    {
+      "file": "36-measurement-lab.md",
+      "hanCharacters": 1134,
+      "references": 4
+    },
+    {
+      "file": "37-project-sensor-data.md",
+      "hanCharacters": 1006,
+      "references": 3
+    },
+    {
+      "file": "38-project-yield-diagnosis.md",
+      "hanCharacters": 1068,
+      "references": 3
+    },
+    {
+      "file": "39-curriculum-study-plan.md",
+      "hanCharacters": 1361,
+      "references": 4
+    },
+    {
+      "file": "40-design-tradeoffs.md",
+      "hanCharacters": 1794,
+      "references": 2
+    },
+    {
+      "file": "41-mems-mechanics.md",
+      "hanCharacters": 1629,
+      "references": 2
+    },
+    {
+      "file": "42-microfluidics.md",
+      "hanCharacters": 1580,
+      "references": 3
+    },
+    {
+      "file": "43-surface-recognition.md",
+      "hanCharacters": 1684,
+      "references": 3
+    },
+    {
+      "file": "44-biofet-interfaces.md",
+      "hanCharacters": 1652,
+      "references": 3
+    },
+    {
+      "file": "45-sensing-modalities.md",
+      "hanCharacters": 1585,
+      "references": 4
+    },
+    {
+      "file": "46-sensor-validation.md",
+      "hanCharacters": 1699,
+      "references": 4
+    }
+  ],
+  "errors": [],
+  "browserQA": "Unavailable: no enabled browsers in cua. Static structure, links, equation rendering and model unit tests only; no visual certification."
+}

@@ -1,0 +1,304 @@
+{
+  "title": "半導體・電子・電機工程",
+  "chapters": 46,
+  "appendices": 3,
+  "hanCharacters": 58744,
+  "equations": 1121,
+  "generatedPages": 52,
+  "documents": [
+    {
+      "file": "01-engineering-map.md",
+      "title": "第 01 章　從需求到晶片：建立工程學科地圖",
+      "characters": 1954,
+      "group": "數理與電路基礎"
+    },
+    {
+      "file": "02-engineering-mathematics.md",
+      "title": "第 02 章　工程數學與量綱",
+      "characters": 1481,
+      "group": "數理與電路基礎"
+    },
+    {
+      "file": "03-complex-phasors.md",
+      "title": "第 03 章　複數、相量與頻域",
+      "characters": 1181,
+      "group": "數理與電路基礎"
+    },
+    {
+      "file": "04-circuit-analysis.md",
+      "title": "第 04 章　電路分析與網路定理",
+      "characters": 1388,
+      "group": "數理與電路基礎"
+    },
+    {
+      "file": "05-transients-filters.md",
+      "title": "第 05 章　暫態與濾波器",
+      "characters": 1131,
+      "group": "數理與電路基礎"
+    },
+    {
+      "file": "06-signals-sampling.md",
+      "title": "第 06 章　訊號、系統與取樣",
+      "characters": 1391,
+      "group": "數理與電路基礎"
+    },
+    {
+      "file": "07-fields-transmission-lines.md",
+      "title": "第 07 章　電磁場、互連與傳輸線",
+      "characters": 1216,
+      "group": "數理與電路基礎"
+    },
+    {
+      "file": "08-solid-state-bands.md",
+      "title": "第 08 章　晶體、能帶與載子統計",
+      "characters": 1303,
+      "group": "材料與半導體元件"
+    },
+    {
+      "file": "09-carriers-transport.md",
+      "title": "第 09 章　摻雜、漂移、擴散與復合",
+      "characters": 1012,
+      "group": "材料與半導體元件"
+    },
+    {
+      "file": "10-pn-junctions.md",
+      "title": "第 10 章　PN 接面與二極體",
+      "characters": 1074,
+      "group": "材料與半導體元件"
+    },
+    {
+      "file": "11-bipolar-transistors.md",
+      "title": "第 11 章　雙極性接面電晶體",
+      "characters": 1039,
+      "group": "材料與半導體元件"
+    },
+    {
+      "file": "12-mos-capacitor-mosfet.md",
+      "title": "第 12 章　MOS 電容與 MOSFET",
+      "characters": 1066,
+      "group": "材料與半導體元件"
+    },
+    {
+      "file": "13-advanced-power-devices.md",
+      "title": "第 13 章　短通道、FinFET／GAA 與功率元件",
+      "characters": 1232,
+      "group": "材料與半導體元件"
+    },
+    {
+      "file": "14-crystal-substrates.md",
+      "title": "第 14 章　晶體成長與基板工程",
+      "characters": 1514,
+      "group": "製程與積體化"
+    },
+    {
+      "file": "15-lithography-patterning.md",
+      "title": "第 15 章　微影與圖形轉移",
+      "characters": 1319,
+      "group": "製程與積體化"
+    },
+    {
+      "file": "16-films-surfaces.md",
+      "title": "第 16 章　薄膜、氧化與表面反應",
+      "characters": 1338,
+      "group": "製程與積體化"
+    },
+    {
+      "file": "17-etch-plasma.md",
+      "title": "第 17 章　蝕刻、電漿與選擇比",
+      "characters": 1309,
+      "group": "製程與積體化"
+    },
+    {
+      "file": "18-doping-thermal-budget.md",
+      "title": "第 18 章　摻雜、離子佈植與熱預算",
+      "characters": 1223,
+      "group": "製程與積體化"
+    },
+    {
+      "file": "19-cleaning-cmp.md",
+      "title": "第 19 章　清洗、表面與化學機械平坦化",
+      "characters": 1290,
+      "group": "製程與積體化"
+    },
+    {
+      "file": "20-interconnect-cmos.md",
+      "title": "第 20 章　CMOS 整合、接觸與多層互連",
+      "characters": 1279,
+      "group": "製程與積體化"
+    },
+    {
+      "file": "21-memory-technologies.md",
+      "title": "第 21 章　SRAM、DRAM、NAND 與新型記憶體",
+      "characters": 1197,
+      "group": "製程與積體化"
+    },
+    {
+      "file": "22-metrology-doe.md",
+      "title": "第 22 章　量測、檢測與實驗設計",
+      "characters": 1127,
+      "group": "品質與製造工程"
+    },
+    {
+      "file": "23-statistics-yield.md",
+      "title": "第 23 章　機率統計、良率與資料判讀",
+      "characters": 1097,
+      "group": "品質與製造工程"
+    },
+    {
+      "file": "24-control-mes.md",
+      "title": "第 24 章　製程控制、MES 與智慧製造",
+      "characters": 1192,
+      "group": "品質與製造工程"
+    },
+    {
+      "file": "25-reliability-change.md",
+      "title": "第 25 章　可靠度、失效物理與工程變更",
+      "characters": 1143,
+      "group": "品質與製造工程"
+    },
+    {
+      "file": "26-analog-small-signal.md",
+      "title": "第 26 章　類比電路、工作點與小訊號",
+      "characters": 1081,
+      "group": "電路與電子系統"
+    },
+    {
+      "file": "27-opamps-feedback.md",
+      "title": "第 27 章　運算放大器、回授與穩定度",
+      "characters": 1069,
+      "group": "電路與電子系統"
+    },
+    {
+      "file": "28-digital-cmos.md",
+      "title": "第 28 章　CMOS 邏輯、延遲與功耗",
+      "characters": 1064,
+      "group": "電路與電子系統"
+    },
+    {
+      "file": "29-hdl-timing-cdc.md",
+      "title": "第 29 章　HDL、同步時序與跨時脈",
+      "characters": 1046,
+      "group": "電路與電子系統"
+    },
+    {
+      "file": "30-data-converters.md",
+      "title": "第 30 章　ADC、DAC、取樣與雜訊預算",
+      "characters": 1050,
+      "group": "電路與電子系統"
+    },
+    {
+      "file": "31-power-electronics.md",
+      "title": "第 31 章　電源、功率轉換與熱設計",
+      "characters": 1080,
+      "group": "電路與電子系統"
+    },
+    {
+      "file": "32-microcontrollers-firmware.md",
+      "title": "第 32 章　微控制器、韌體與資料完整性",
+      "characters": 1167,
+      "group": "電路與電子系統"
+    },
+    {
+      "file": "33-test-dft.md",
+      "title": "第 33 章　測試、DFT 與可觀測性",
+      "characters": 1256,
+      "group": "電路與電子系統"
+    },
+    {
+      "file": "34-packaging-chiplets.md",
+      "title": "第 34 章　封裝、Chiplet、散熱與訊號完整性",
+      "characters": 1185,
+      "group": "電路與電子系統"
+    },
+    {
+      "file": "35-rf-opto-sensors.md",
+      "title": "第 35 章　射頻、光電與感測器概論",
+      "characters": 1058,
+      "group": "電路與電子系統"
+    },
+    {
+      "file": "36-measurement-lab.md",
+      "title": "第 36 章　工程實驗與量測方法",
+      "characters": 1134,
+      "group": "實驗與整合專題"
+    },
+    {
+      "file": "37-project-sensor-data.md",
+      "title": "第 37 章　專題一：從感測器到可追溯數位資料",
+      "characters": 1006,
+      "group": "實驗與整合專題"
+    },
+    {
+      "file": "38-project-yield-diagnosis.md",
+      "title": "第 38 章　專題二：良率異常診斷",
+      "characters": 1068,
+      "group": "實驗與整合專題"
+    },
+    {
+      "file": "39-curriculum-study-plan.md",
+      "title": "第 39 章　科系課程地圖與兩學期學習計畫",
+      "characters": 1361,
+      "group": "實驗與整合專題"
+    },
+    {
+      "file": "40-design-tradeoffs.md",
+      "title": "第 40 章　整合設計審查：效能、能耗、良率與成本",
+      "characters": 1794,
+      "group": "實驗與整合專題"
+    },
+    {
+      "file": "41-mems-mechanics.md",
+      "title": "第41章 微機電：從結構力學到可讀出的訊號",
+      "characters": 1629,
+      "group": "微奈米與生醫感測"
+    },
+    {
+      "file": "42-microfluidics.md",
+      "title": "第42章 微流體與傳輸：流得過去，不代表混得均勻",
+      "characters": 1580,
+      "group": "微奈米與生醫感測"
+    },
+    {
+      "file": "43-surface-recognition.md",
+      "title": "第43章 表面辨識與反應動力學：有結合，不等於量得到",
+      "characters": 1684,
+      "group": "微奈米與生醫感測"
+    },
+    {
+      "file": "44-biofet-interfaces.md",
+      "title": "第44章 BioFET 與電解液界面：從表面電位到汲極電流",
+      "characters": 1652,
+      "group": "微奈米與生醫感測"
+    },
+    {
+      "file": "45-sensing-modalities.md",
+      "title": "第45章 電化學、光學與奈米孔：不同讀出量，如何公平比較？",
+      "characters": 1585,
+      "group": "微奈米與生醫感測"
+    },
+    {
+      "file": "46-sensor-validation.md",
+      "title": "第46章 感測器驗證：從漂亮曲線走向可信的量測",
+      "characters": 1699,
+      "group": "微奈米與生醫感測"
+    },
+    {
+      "file": "90-symbols.md",
+      "title": "附錄A　符號、單位與量級檢查",
+      "characters": 999,
+      "group": "查詢與延伸閱讀"
+    },
+    {
+      "file": "91-glossary.md",
+      "title": "附錄B　跨學科術語速查",
+      "characters": 1943,
+      "group": "查詢與延伸閱讀"
+    },
+    {
+      "file": "92-bibliography.md",
+      "title": "附錄C　學術資料、延伸閱讀與編寫說明",
+      "characters": 1212,
+      "group": "查詢與延伸閱讀"
+    }
+  ]
+}

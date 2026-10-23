@@ -1,0 +1,806 @@
+{
+  "checkedAt": "2026-10-22T16:20:57.421Z",
+  "method": "HTTP reachability only; not full-text verification",
+  "results": [
+    {
+      "url": "https://artofelectronics.net/",
+      "status": 200,
+      "finalURL": "https://artofelectronics.net/",
+      "contentType": "text/html; charset=UTF-8",
+      "access": "reachable"
+    },
+    {
+      "url": "https://arxiv.org/abs/0712.0198",
+      "status": 200,
+      "finalURL": "https://arxiv.org/abs/0712.0198",
+      "contentType": "text/html; charset=utf-8",
+      "access": "reachable"
+    },
+    {
+      "url": "https://assets.cambridge.org/97805211/19030/excerpt/9780521119030_excerpt.pdf",
+      "status": 200,
+      "finalURL": "https://assets.cambridge.org/97805211/19030/excerpt/9780521119030_excerpt.pdf",
+      "contentType": "application/pdf",
+      "access": "reachable"
+    },
+    {
+      "url": "https://boning.mit.edu/wp-content/uploads/2022/11/MIT-IntCMPSymp-Dec2000-ver4db.pdf",
+      "status": 200,
+      "finalURL": "https://boning.mit.edu/wp-content/uploads/2022/11/MIT-IntCMPSymp-Dec2000-ver4db.pdf",
+      "contentType": "application/pdf",
+      "access": "reachable"
+    },
+    {
+      "url": "https://catalog.mit.edu/subjects/6/",
+      "status": 200,
+      "finalURL": "https://catalog.mit.edu/subjects/6/",
+      "contentType": "text/html; charset=UTF-8",
+      "access": "reachable"
+    },
+    {
+      "url": "https://cns1.rc.fas.harvard.edu/facilities/docs/2014%20Nanofabrication%20Summer%20School%20-%20Photolithography.pdf",
+      "status": 200,
+      "finalURL": "https://cns1.rc.fas.harvard.edu/facilities/docs/2014%20Nanofabrication%20Summer%20School%20-%20Photolithography.pdf",
+      "contentType": "application/pdf",
+      "access": "reachable"
+    },
+    {
+      "url": "https://cpseg.eecs.umich.edu/pub/articles/JVSTB_42_041501_2024.pdf",
+      "status": 200,
+      "finalURL": "https://cpseg.eecs.umich.edu/pub/articles/JVSTB_42_041501_2024.pdf",
+      "contentType": "application/pdf",
+      "access": "reachable"
+    },
+    {
+      "url": "https://developerhelp.microchip.com/xwiki/bin/view/products/data-converters/adc-specs/acquisition-time/",
+      "status": null,
+      "access": "unverified",
+      "reason": "TimeoutError"
+    },
+    {
+      "url": "https://elec.eng.cam.ac.uk/our-triple-mission/educate/undergraduate-courses/",
+      "status": 200,
+      "finalURL": "https://elec.eng.cam.ac.uk/our-triple-mission/educate/undergraduate-courses/",
+      "contentType": "text/html; charset=UTF-8",
+      "access": "reachable"
+    },
+    {
+      "url": "https://ethz.ch/en/studies/bachelor/bachelors-degree-programmes/engineering-sciences/electrical-engineering-and-information-technology.html",
+      "status": 200,
+      "finalURL": "https://ethz.ch/en/studies/bachelor/bachelors-degree-programmes/engineering-sciences/electrical-engineering-and-information-technology.html",
+      "contentType": "text/html;charset=utf-8",
+      "access": "reachable"
+    },
+    {
+      "url": "https://goldbook.iupac.org/",
+      "status": 403,
+      "finalURL": "https://goldbook.iupac.org/",
+      "contentType": "text/html; charset=UTF-8",
+      "access": "restricted"
+    },
+    {
+      "url": "https://goldbook.iupac.org/terms/view/09069/html",
+      "status": 403,
+      "finalURL": "https://goldbook.iupac.org/terms/view/09069/html",
+      "contentType": "text/html; charset=UTF-8",
+      "access": "restricted"
+    },
+    {
+      "url": "https://goldbook.iupac.org/terms/view/D01629",
+      "status": 403,
+      "finalURL": "https://goldbook.iupac.org/terms/view/D01629",
+      "contentType": "text/html; charset=UTF-8",
+      "access": "restricted"
+    },
+    {
+      "url": "https://grouper.ieee.org/groups/1149/1/index.html",
+      "status": 200,
+      "finalURL": "https://grouper.ieee.org/groups/1149/1/index.html",
+      "contentType": "text/html",
+      "access": "reachable"
+    },
+    {
+      "url": "https://ieeexplore.ieee.org/document/6028533/",
+      "status": 202,
+      "finalURL": "https://ieeexplore.ieee.org/document/6028533/",
+      "contentType": "text/html; charset=UTF-8",
+      "access": "reachable"
+    },
+    {
+      "url": "https://itl.nist.gov/div898/handbook/apr/section1/apr151.htm",
+      "status": 200,
+      "finalURL": "https://itl.nist.gov/div898/handbook/apr/section1/apr151.htm",
+      "contentType": "text/html; charset=utf-8",
+      "access": "reachable"
+    },
+    {
+      "url": "https://itl.nist.gov/div898/handbook/prc/section2/prc24.htm",
+      "status": 200,
+      "finalURL": "https://itl.nist.gov/div898/handbook/prc/section2/prc24.htm",
+      "contentType": "text/html; charset=utf-8",
+      "access": "reachable"
+    },
+    {
+      "url": "https://jp.em.keysight.com/tmo/AEM/System_Simulation_Portal/5992-0197EN.pdf",
+      "status": 403,
+      "finalURL": "https://jp.em.keysight.com/tmo/AEM/System_Simulation_Portal/5992-0197EN.pdf",
+      "contentType": "text/html; charset=UTF-8",
+      "access": "restricted"
+    },
+    {
+      "url": "https://learninglink.oup.com/access/sedra8e/sedra8e",
+      "status": 200,
+      "finalURL": "https://learninglink.oup.com/access/sedra8e/sedra8e",
+      "contentType": "text/html; charset=utf-8",
+      "access": "reachable"
+    },
+    {
+      "url": "https://link.springer.com/article/10.1007/s11669-014-0343-5",
+      "status": 200,
+      "finalURL": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1007%2Fs11669-014-0343-5&code=99b39555-9bf7-4087-9cf0-3631784a9889",
+      "contentType": "text/html; charset=utf-8",
+      "access": "reachable"
+    },
+    {
+      "url": "https://link.springer.com/book/10.1007/978-3-030-43881-4",
+      "status": 200,
+      "finalURL": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Fbook%2F10.1007%2F978-3-030-43881-4&code=be328bfd-3eff-4970-90e5-4fe0c43e26db",
+      "contentType": "text/html; charset=utf-8",
+      "access": "reachable"
+    },
+    {
+      "url": "https://ocw.mit.edu/",
+      "status": 200,
+      "finalURL": "https://ocw.mit.edu/",
+      "contentType": "text/html",
+      "access": "reachable"
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/18-03-differential-equations-spring-2010/pages/lecture-notes/",
+      "status": 200,
+      "finalURL": "https://ocw.mit.edu/courses/18-03-differential-equations-spring-2010/pages/lecture-notes/",
+      "contentType": "text/html",
+      "access": "reachable"
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/",
+      "status": 200,
+      "finalURL": "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/",
+      "contentType": "text/html",
+      "access": "reachable"
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/18-357-interfacial-phenomena-fall-2010/58223f940add94dffda4a4ae7dfccaa4_MIT18_357F10_Lecture8.pdf",
+      "status": 200,
+      "finalURL": "https://ocw.mit.edu/courses/18-357-interfacial-phenomena-fall-2010/58223f940add94dffda4a4ae7dfccaa4_MIT18_357F10_Lecture8.pdf",
+      "contentType": "application/pdf",
+      "access": "reachable"
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/2-674-micro-nano-engineering-laboratory-spring-2016/9276d2f8e7d7045bf4d28f17d0d71f8b_MIT2_647S16_Lec5Elctroknet.pdf",
+      "status": 200,
+      "finalURL": "https://ocw.mit.edu/courses/2-674-micro-nano-engineering-laboratory-spring-2016/9276d2f8e7d7045bf4d28f17d0d71f8b_MIT2_647S16_Lec5Elctroknet.pdf",
+      "contentType": "application/pdf",
+      "access": "reachable"
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/2-674-micro-nano-engineering-laboratory-spring-2016/resources/lecture-notes/",
+      "status": 200,
+      "finalURL": "https://ocw.mit.edu/courses/2-674-micro-nano-engineering-laboratory-spring-2016/resources/lecture-notes/",
+      "contentType": "text/html",
+      "access": "reachable"
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/20-201-mechanisms-of-drug-actions-fall-2013/c3592a216acb700b8d71a46139996985_MIT20_201F13_R1_funda.pdf",
+      "status": 200,
+      "finalURL": "https://ocw.mit.edu/courses/20-201-mechanisms-of-drug-actions-fall-2013/c3592a216acb700b8d71a46139996985_MIT20_201F13_R1_funda.pdf",
+      "contentType": "application/pdf",
+      "access": "reachable"
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/6-002-circuits-and-electronics-spring-2007/pages/lecture-notes/",
+      "status": 200,
+      "finalURL": "https://ocw.mit.edu/courses/6-002-circuits-and-electronics-spring-2007/pages/lecture-notes/",
+      "contentType": "text/html",
+      "access": "reachable"
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/6-002-circuits-and-electronics-spring-2007/resources/6002_l3/",
+      "status": 200,
+      "finalURL": "https://ocw.mit.edu/courses/6-002-circuits-and-electronics-spring-2007/resources/6002_l3/",
+      "contentType": "text/html",
+      "access": "reachable"
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/6-003-signals-and-systems-fall-2011/",
+      "status": 200,
+      "finalURL": "https://ocw.mit.edu/courses/6-003-signals-and-systems-fall-2011/",
+      "contentType": "text/html",
+      "access": "reachable"
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/6-003-signals-and-systems-fall-2011/pages/lecture-notes/",
+      "status": 200,
+      "finalURL": "https://ocw.mit.edu/courses/6-003-signals-and-systems-fall-2011/pages/lecture-notes/",
+      "contentType": "text/html",
+      "access": "reachable"
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/6-003-signals-and-systems-fall-2011/resources/mit6_003f11_lec21/",
+      "status": 200,
+      "finalURL": "https://ocw.mit.edu/courses/6-003-signals-and-systems-fall-2011/resources/mit6_003f11_lec21/",
+      "contentType": "text/html",
+      "access": "reachable"
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/6-004-computation-structures-spring-2017/",
+      "status": 200,
+      "finalURL": "https://ocw.mit.edu/courses/6-004-computation-structures-spring-2017/",
+      "contentType": "text/html",
+      "access": "reachable"
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/6-004-computation-structures-spring-2017/pages/c14/c14s1/",
+      "status": 200,
+      "finalURL": "https://ocw.mit.edu/courses/6-004-computation-structures-spring-2017/pages/c14/c14s1/",
+      "contentType": "text/html",
+      "access": "reachable"
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/6-012-microelectronic-devices-and-circuits-fall-2005/pages/lecture-notes/",
+      "status": 200,
+      "finalURL": "https://ocw.mit.edu/courses/6-012-microelectronic-devices-and-circuits-fall-2005/pages/lecture-notes/",
+      "contentType": "text/html",
+      "access": "reachable"
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/6-012-microelectronic-devices-and-circuits-spring-2009/4692cf463514c4f47d8629fab7d41c15_MIT6_012S09_lec03.pdf",
+      "status": 200,
+      "finalURL": "https://ocw.mit.edu/courses/6-012-microelectronic-devices-and-circuits-spring-2009/4692cf463514c4f47d8629fab7d41c15_MIT6_012S09_lec03.pdf",
+      "contentType": "application/pdf",
+      "access": "reachable"
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/6-012-microelectronic-devices-and-circuits-spring-2009/pages/lecture-notes/",
+      "status": 200,
+      "finalURL": "https://ocw.mit.edu/courses/6-012-microelectronic-devices-and-circuits-spring-2009/pages/lecture-notes/",
+      "contentType": "text/html",
+      "access": "reachable"
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/6-012-microelectronic-devices-and-circuits-spring-2009/resources/mit6_012s09_lec02/",
+      "status": 200,
+      "finalURL": "https://ocw.mit.edu/courses/6-012-microelectronic-devices-and-circuits-spring-2009/resources/mit6_012s09_lec02/",
+      "contentType": "text/html",
+      "access": "reachable"
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/6-012-microelectronic-devices-and-circuits-spring-2009/resources/mit6_012s09_lec04/",
+      "status": 200,
+      "finalURL": "https://ocw.mit.edu/courses/6-012-microelectronic-devices-and-circuits-spring-2009/resources/mit6_012s09_lec04/",
+      "contentType": "text/html",
+      "access": "reachable"
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/6-013-electromagnetics-and-applications-spring-2009/pages/readings/",
+      "status": 200,
+      "finalURL": "https://ocw.mit.edu/courses/6-013-electromagnetics-and-applications-spring-2009/pages/readings/",
+      "contentType": "text/html",
+      "access": "reachable"
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/6-013-electromagnetics-and-applications-spring-2009/resources/mit6_013s09_chap07/",
+      "status": 200,
+      "finalURL": "https://ocw.mit.edu/courses/6-013-electromagnetics-and-applications-spring-2009/resources/mit6_013s09_chap07/",
+      "contentType": "text/html",
+      "access": "reachable"
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/6-111-introductory-digital-systems-laboratory-spring-2006/",
+      "status": 200,
+      "finalURL": "https://ocw.mit.edu/courses/6-111-introductory-digital-systems-laboratory-spring-2006/",
+      "contentType": "text/html",
+      "access": "reachable"
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/6-152j-micro-nano-processing-technology-fall-2005/59b9f31d836355a3380aa156925508bc_lecture17.pdf",
+      "status": 200,
+      "finalURL": "https://ocw.mit.edu/courses/6-152j-micro-nano-processing-technology-fall-2005/59b9f31d836355a3380aa156925508bc_lecture17.pdf",
+      "contentType": "application/pdf",
+      "access": "reachable"
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/6-152j-micro-nano-processing-technology-fall-2005/cad5227ddbdf120be10a0c372f2ccedd_cvd.pdf",
+      "status": 200,
+      "finalURL": "https://ocw.mit.edu/courses/6-152j-micro-nano-processing-technology-fall-2005/cad5227ddbdf120be10a0c372f2ccedd_cvd.pdf",
+      "contentType": "application/pdf",
+      "access": "reachable"
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/6-152j-micro-nano-processing-technology-fall-2005/fa6170fba10bd1341251791563a18fc2_lecture6.pdf",
+      "status": 200,
+      "finalURL": "https://ocw.mit.edu/courses/6-152j-micro-nano-processing-technology-fall-2005/fa6170fba10bd1341251791563a18fc2_lecture6.pdf",
+      "contentType": "application/pdf",
+      "access": "reachable"
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/6-774-physics-of-microfabrication-front-end-processing-fall-2004/1A13piOIKUnE98sIA6U6hTYxikIBbXgxG_transcript.pdf",
+      "status": 200,
+      "finalURL": "https://ocw.mit.edu/courses/6-774-physics-of-microfabrication-front-end-processing-fall-2004/1A13piOIKUnE98sIA6U6hTYxikIBbXgxG_transcript.pdf",
+      "contentType": "application/pdf",
+      "access": "reachable"
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/6-774-physics-of-microfabrication-front-end-processing-fall-2004/1RhMlsWln7tVtc_3WeIdSblNinAm7UP8N_transcript.pdf",
+      "status": 200,
+      "finalURL": "https://ocw.mit.edu/courses/6-774-physics-of-microfabrication-front-end-processing-fall-2004/1RhMlsWln7tVtc_3WeIdSblNinAm7UP8N_transcript.pdf",
+      "contentType": "application/pdf",
+      "access": "reachable"
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/6-774-physics-of-microfabrication-front-end-processing-fall-2004/pages/calendar/",
+      "status": 200,
+      "finalURL": "https://ocw.mit.edu/courses/6-774-physics-of-microfabrication-front-end-processing-fall-2004/pages/calendar/",
+      "contentType": "text/html",
+      "access": "reachable"
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/6-777j-design-and-fabrication-of-microelectromechanical-devices-spring-2007/6f533cbf3074f26dad3b2e819442dfc5_07lecture03.pdf",
+      "status": 200,
+      "finalURL": "https://ocw.mit.edu/courses/6-777j-design-and-fabrication-of-microelectromechanical-devices-spring-2007/6f533cbf3074f26dad3b2e819442dfc5_07lecture03.pdf",
+      "contentType": "application/pdf",
+      "access": "reachable"
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/6-777j-design-and-fabrication-of-microelectromechanical-devices-spring-2007/80ed1dbb9e2320d5cf83f35ea55f51bf_07lecture07split.pdf",
+      "status": 200,
+      "finalURL": "https://ocw.mit.edu/courses/6-777j-design-and-fabrication-of-microelectromechanical-devices-spring-2007/80ed1dbb9e2320d5cf83f35ea55f51bf_07lecture07split.pdf",
+      "contentType": "application/pdf",
+      "access": "reachable"
+    },
+    {
+      "url": "https://pdl.cmu.edu/PDL-FTP/NVM/08013174.pdf",
+      "status": 200,
+      "finalURL": "https://pdl.cmu.edu/PDL-FTP/NVM/08013174.pdf",
+      "contentType": "application/pdf",
+      "access": "reachable"
+    },
+    {
+      "url": "https://people.eecs.berkeley.edu/~pattrsn/294/lec2.html",
+      "status": 200,
+      "finalURL": "https://people.eecs.berkeley.edu/~pattrsn/294/lec2.html",
+      "contentType": "text/html",
+      "access": "reachable"
+    },
+    {
+      "url": "https://physics.nist.gov/cuu/Constants/",
+      "status": 200,
+      "finalURL": "https://physics.nist.gov/cuu/Constants/",
+      "contentType": "text/html",
+      "access": "reachable"
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/11509722/",
+      "status": 203,
+      "finalURL": "https://pubmed.ncbi.nlm.nih.gov/11509722/",
+      "contentType": "text/html; charset=utf-8",
+      "access": "reachable"
+    },
+    {
+      "url": "https://pubs.rsc.org/en/content/articlehtml/1987/an/an9871200199",
+      "status": 403,
+      "finalURL": "https://pubs.rsc.org/en/content/articlehtml/1987/an/an9871200199",
+      "contentType": "text/html; charset=UTF-8",
+      "access": "restricted"
+    },
+    {
+      "url": "https://resources.altera.com/quartushelp/current/mapIdTopics/sth1413172172690.htm",
+      "status": 200,
+      "finalURL": "https://resources.altera.com/quartushelp/current/mapIdTopics/sth1413172172690.htm",
+      "contentType": "text/html",
+      "access": "reachable"
+    },
+    {
+      "url": "https://support.arm.com/documentation/107565/0101/Memory-system/Memory-barriers?lang=en",
+      "status": 403,
+      "finalURL": "https://support.arm.com/documentation/107565/0101/Memory-system/Memory-barriers?lang=en",
+      "contentType": "text/html",
+      "access": "restricted"
+    },
+    {
+      "url": "https://swisschips.ethz.ch/education-outreach/eth-zurich-course-offerings.html",
+      "status": 200,
+      "finalURL": "https://swisschips.ethz.ch/education-outreach/eth-zurich-course-offerings.html",
+      "contentType": "text/html;charset=utf-8",
+      "access": "reachable"
+    },
+    {
+      "url": "https://users.ece.cmu.edu/~omutlu/pub/onur-ACACES2013-Lecture3b-emerging-and-hybrid-memory-technologies-afterlecture.pdf",
+      "status": null,
+      "access": "unverified",
+      "reason": "TypeError"
+    },
+    {
+      "url": "https://web.ee.nthu.edu.tw/p/405-1175-41227,c527.php?Lang=zh-tw",
+      "status": 403,
+      "finalURL": "https://web.ee.nthu.edu.tw/p/405-1175-41227,c527.php?Lang=zh-tw",
+      "contentType": "text/html",
+      "access": "restricted"
+    },
+    {
+      "url": "https://web.stanford.edu/~boyd/papers/pdf/self_tuning_max_lifetime.pdf",
+      "status": 200,
+      "finalURL": "https://web.stanford.edu/~boyd/papers/pdf/self_tuning_max_lifetime.pdf",
+      "contentType": "application/pdf",
+      "access": "reachable"
+    },
+    {
+      "url": "https://web.stanford.edu/class/archive/ee/ee371/ee371.1066/lectures/lect_09_1up.pdf",
+      "status": 200,
+      "finalURL": "https://web.stanford.edu/class/archive/ee/ee371/ee371.1066/lectures/lect_09_1up.pdf",
+      "contentType": "application/pdf",
+      "access": "reachable"
+    },
+    {
+      "url": "https://web.stanford.edu/class/archive/ee/ee371/ee371.1066/lectures/lect_15.2up.pdf",
+      "status": 200,
+      "finalURL": "https://web.stanford.edu/class/archive/ee/ee371/ee371.1066/lectures/lect_15.2up.pdf",
+      "contentType": "application/pdf",
+      "access": "reachable"
+    },
+    {
+      "url": "https://webee.technion.ac.il/~ran/papers/Metastability-and-Synchronizers.IEEEDToct2011.pdf",
+      "status": 200,
+      "finalURL": "https://webee.technion.ac.il/~ran/papers/Metastability-and-Synchronizers.IEEEDToct2011.pdf",
+      "contentType": "application/pdf",
+      "access": "reachable"
+    },
+    {
+      "url": "https://www.analog.com/en/resources/technical-articles/stabilize-transimpedance-amplifier-circuit-design.html",
+      "status": null,
+      "access": "unverified",
+      "reason": "TimeoutError"
+    },
+    {
+      "url": "https://www.analog.com/media/en/training-seminars/design-handbooks/high-speed-design-tech-sect3.pdf",
+      "status": null,
+      "access": "unverified",
+      "reason": "TimeoutError"
+    },
+    {
+      "url": "https://www.analog.com/media/en/training-seminars/tutorials/MT-001.pdf",
+      "status": null,
+      "access": "unverified",
+      "reason": "TimeoutError"
+    },
+    {
+      "url": "https://www.analog.com/MT-031",
+      "status": null,
+      "access": "unverified",
+      "reason": "TimeoutError"
+    },
+    {
+      "url": "https://www.appliedmaterials.com/us/en/semiconductor/products/processes/implant.html",
+      "status": 403,
+      "finalURL": "https://www.appliedmaterials.com/us/en/semiconductor/products/processes/implant.html",
+      "contentType": "text/html",
+      "access": "restricted"
+    },
+    {
+      "url": "https://www.asm.com/our-technology-products/ald",
+      "status": 200,
+      "finalURL": "https://www.asm.com/our-technology-products/ald",
+      "contentType": "text/html; charset=utf-8",
+      "access": "reachable"
+    },
+    {
+      "url": "https://www.asml.com/en/technology/lithography-principles/lenses-and-mirrors",
+      "status": 200,
+      "finalURL": "https://www.asml.com/en/technology/lithography-principles/lenses-and-mirrors",
+      "contentType": "text/html; charset=utf-8",
+      "access": "reachable"
+    },
+    {
+      "url": "https://www.asml.com/en/technology/lithography-principles/rayleigh-criterion",
+      "status": 200,
+      "finalURL": "https://www.asml.com/en/technology/lithography-principles/rayleigh-criterion",
+      "contentType": "text/html; charset=utf-8",
+      "access": "reachable"
+    },
+    {
+      "url": "https://www.cambridge.org/core/books/micro-and-nanoscale-fluid-mechanics/9E4617F4CB0B3E489DCFC291A39452FF",
+      "status": 200,
+      "finalURL": "https://www.cambridge.org/core/books/micro-and-nanoscale-fluid-mechanics/9E4617F4CB0B3E489DCFC291A39452FF",
+      "contentType": "text/html; charset=utf-8",
+      "access": "reachable"
+    },
+    {
+      "url": "https://www.chu.berkeley.edu/modern-semiconductor-devices-for-integrated-circuits-chenming-calvin-hu-2010/",
+      "status": 200,
+      "finalURL": "https://www.chu.berkeley.edu/modern-semiconductor-devices-for-integrated-circuits-chenming-calvin-hu-2010/",
+      "contentType": "text/html; charset=UTF-8",
+      "access": "reachable"
+    },
+    {
+      "url": "https://www.chu.berkeley.edu/wp-content/uploads/2020/01/Chenming-Hu_ch1-3.pdf",
+      "status": 200,
+      "finalURL": "https://www.chu.berkeley.edu/wp-content/uploads/2020/01/Chenming-Hu_ch1-3.pdf",
+      "contentType": "application/pdf",
+      "access": "reachable"
+    },
+    {
+      "url": "https://www.chu.berkeley.edu/wp-content/uploads/2020/01/Chenming-Hu_ch4-1.pdf",
+      "status": 200,
+      "finalURL": "https://www.chu.berkeley.edu/wp-content/uploads/2020/01/Chenming-Hu_ch4-1.pdf",
+      "contentType": "application/pdf",
+      "access": "reachable"
+    },
+    {
+      "url": "https://www.chu.berkeley.edu/wp-content/uploads/2020/01/Chenming-Hu_ch5-1.pdf",
+      "status": 200,
+      "finalURL": "https://www.chu.berkeley.edu/wp-content/uploads/2020/01/Chenming-Hu_ch5-1.pdf",
+      "contentType": "application/pdf",
+      "access": "reachable"
+    },
+    {
+      "url": "https://www.chu.berkeley.edu/wp-content/uploads/2020/01/Chenming-Hu_ch6-1.pdf",
+      "status": 200,
+      "finalURL": "https://www.chu.berkeley.edu/wp-content/uploads/2020/01/Chenming-Hu_ch6-1.pdf",
+      "contentType": "application/pdf",
+      "access": "reachable"
+    },
+    {
+      "url": "https://www.chu.berkeley.edu/wp-content/uploads/2020/01/Chenming-Hu_ch7.pdf",
+      "status": 200,
+      "finalURL": "https://www.chu.berkeley.edu/wp-content/uploads/2020/01/Chenming-Hu_ch7.pdf",
+      "contentType": "application/pdf",
+      "access": "reachable"
+    },
+    {
+      "url": "https://www.chu.berkeley.edu/wp-content/uploads/2020/01/Chenming-Hu_ch8-2.pdf",
+      "status": 200,
+      "finalURL": "https://www.chu.berkeley.edu/wp-content/uploads/2020/01/Chenming-Hu_ch8-2.pdf",
+      "contentType": "application/pdf",
+      "access": "reachable"
+    },
+    {
+      "url": "https://www.imec-int.com/en/press/imec-demonstrates-16nm-pitch-ru-lines-record-low-resistance-obtained-using-semi-damascene",
+      "status": 200,
+      "finalURL": "https://www.imec-int.com/en/press/imec-demonstrates-16nm-pitch-ru-lines-record-low-resistance-obtained-using-semi-damascene",
+      "contentType": "text/html; charset=utf-8",
+      "access": "reachable"
+    },
+    {
+      "url": "https://www.infineon.com/dgdl/Infineon-High-performance_SiC_MOSFET_technology_for_power_electronics_design-Article-v01_00-EN.pdf?fileId=5546d4626e651a41016e889ccd0d1c5e",
+      "status": 200,
+      "finalURL": "https://www.infineon.com/assets/row/public/documents/24/54/infineon-high-performance-sic-mosfet-technology-for-power-electronics-design-article-en.pdf",
+      "contentType": "application/pdf",
+      "access": "reachable"
+    },
+    {
+      "url": "https://www.itl.nist.gov/div898/handbook/",
+      "status": 200,
+      "finalURL": "https://www.itl.nist.gov/div898/handbook/",
+      "contentType": "text/html; charset=utf-8",
+      "access": "reachable"
+    },
+    {
+      "url": "https://www.itl.nist.gov/div898/handbook/apr/section1/apr153.htm",
+      "status": 200,
+      "finalURL": "https://www.itl.nist.gov/div898/handbook/apr/section1/apr153.htm",
+      "contentType": "text/html; charset=utf-8",
+      "access": "reachable"
+    },
+    {
+      "url": "https://www.itl.nist.gov/div898/handbook/apr/section2/apr21.htm",
+      "status": 200,
+      "finalURL": "https://www.itl.nist.gov/div898/handbook/apr/section2/apr21.htm",
+      "contentType": "text/html; charset=utf-8",
+      "access": "reachable"
+    },
+    {
+      "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda366j.htm",
+      "status": 200,
+      "finalURL": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda366j.htm",
+      "contentType": "text/html; charset=utf-8",
+      "access": "reachable"
+    },
+    {
+      "url": "https://www.itl.nist.gov/div898/handbook/pmc/section1/pmc16.htm",
+      "status": 200,
+      "finalURL": "https://www.itl.nist.gov/div898/handbook/pmc/section1/pmc16.htm",
+      "contentType": "text/html; charset=utf-8",
+      "access": "reachable"
+    },
+    {
+      "url": "https://www.itl.nist.gov/div898/handbook/pmc/section3/pmc324.htm",
+      "status": 200,
+      "finalURL": "https://www.itl.nist.gov/div898/handbook/pmc/section3/pmc324.htm",
+      "contentType": "text/html; charset=utf-8",
+      "access": "reachable"
+    },
+    {
+      "url": "https://www.itl.nist.gov/div898/handbook/pmc/section3/pmc332.htm",
+      "status": 200,
+      "finalURL": "https://www.itl.nist.gov/div898/handbook/pmc/section3/pmc332.htm",
+      "contentType": "text/html; charset=utf-8",
+      "access": "reachable"
+    },
+    {
+      "url": "https://www.itl.nist.gov/div898/handbook/pri/section3/pri3331.htm",
+      "status": 200,
+      "finalURL": "https://www.itl.nist.gov/div898/handbook/pri/section3/pri3331.htm",
+      "contentType": "text/html; charset=utf-8",
+      "access": "reachable"
+    },
+    {
+      "url": "https://www.nist.gov/itl/sed/topic-areas/measurement-uncertainty",
+      "status": 200,
+      "finalURL": "https://www.nist.gov/itl/sed/topic-areas/measurement-uncertainty",
+      "contentType": "text/html; charset=UTF-8",
+      "access": "reachable"
+    },
+    {
+      "url": "https://www.nist.gov/pml/nist-technical-note-1297",
+      "status": 200,
+      "finalURL": "https://www.nist.gov/pml/nist-technical-note-1297",
+      "contentType": "text/html; charset=UTF-8",
+      "access": "reachable"
+    },
+    {
+      "url": "https://www.nist.gov/pml/productsservices/quantum-networks-nist/technologies-quantum-networks/sources-nonclassical-light",
+      "status": 200,
+      "finalURL": "https://www.nist.gov/pml/productsservices/quantum-networks-nist/technologies-quantum-networks/sources-nonclassical-light",
+      "contentType": "text/html; charset=UTF-8",
+      "access": "reachable"
+    },
+    {
+      "url": "https://www.nist.gov/pml/special-publication-330/sp-330-section-2",
+      "status": 200,
+      "finalURL": "https://www.nist.gov/pml/special-publication-330/sp-330-section-2",
+      "contentType": "text/html; charset=UTF-8",
+      "access": "reachable"
+    },
+    {
+      "url": "https://www.nist.gov/publications/nanopore-sensing-physical-chemical-approach",
+      "status": 200,
+      "finalURL": "https://www.nist.gov/publications/nanopore-sensing-physical-chemical-approach",
+      "contentType": "text/html; charset=UTF-8",
+      "access": "reachable"
+    },
+    {
+      "url": "https://www.nist.gov/publications/nistsematech-engineering-statistics-handbook-chapter-2-measurement-process",
+      "status": 200,
+      "finalURL": "https://www.nist.gov/publications/nistsematech-engineering-statistics-handbook-chapter-2-measurement-process",
+      "contentType": "text/html; charset=UTF-8",
+      "access": "reachable"
+    },
+    {
+      "url": "https://www.nist.gov/si-redefinition/meet-constants",
+      "status": 200,
+      "finalURL": "https://www.nist.gov/si-redefinition/meet-constants",
+      "contentType": "text/html; charset=UTF-8",
+      "access": "reachable"
+    },
+    {
+      "url": "https://www.opencompute.org/projects/server/open-chiplet-economy/chiplet-systems/",
+      "status": 200,
+      "finalURL": "https://www.opencompute.org/projects/server/open-chiplet-economy/chiplet-systems/",
+      "contentType": "text/html; charset=UTF-8",
+      "access": "reachable"
+    },
+    {
+      "url": "https://www.pearson.com/en-us/subject-catalog/p/Rabaey-Digital-Integrated-Circuits-2nd-Edition/P200000003473",
+      "status": 200,
+      "finalURL": "https://www.pearson.com/en-us/subject-catalog/p/Rabaey-Digital-Integrated-Circuits-2nd-Edition/P200000003473",
+      "contentType": "text/html; charset=utf-8",
+      "access": "reachable"
+    },
+    {
+      "url": "https://www.semi.org/en/standards-watch-2022-Sept/intro-to-semi-communication-standards",
+      "status": 403,
+      "finalURL": "https://www.semi.org/en/standards-watch-2022-Sept/intro-to-semi-communication-standards",
+      "contentType": "text/html; charset=UTF-8",
+      "access": "restricted"
+    },
+    {
+      "url": "https://www.sumcosi.com/english/products/process/",
+      "status": 200,
+      "finalURL": "https://www.sumcosi.com/english/products/process/",
+      "contentType": "text/html;charset=utf-8",
+      "access": "reachable"
+    },
+    {
+      "url": "https://www.tek.com/en/documents/whitepaper/abcs-probes-primer",
+      "status": 200,
+      "finalURL": "https://www.tek.com/en/documents/whitepaper/abcs-probes-primer",
+      "contentType": "text/html; charset=utf-8",
+      "access": "reachable"
+    },
+    {
+      "url": "https://www.ti.com/document-viewer/lit/html/SSZT273/GUID-35325469-4DAE-49C6-84D9-2A4C55512BEF",
+      "status": 200,
+      "finalURL": "https://www.ti.com/document-viewer/lit/html/SSZT273/GUID-35325469-4DAE-49C6-84D9-2A4C55512BEF",
+      "contentType": "text/html;charset=utf-8",
+      "access": "reachable"
+    },
+    {
+      "url": "https://www.ti.com/lit/an/slva477b/slva477b.pdf",
+      "status": 200,
+      "finalURL": "https://www.ti.com/lit/an/slva477c/slva477c.pdf?ts=1792634484081",
+      "contentType": "application/pdf",
+      "access": "reachable"
+    },
+    {
+      "url": "https://www.ti.com/lit/an/spra953d/spra953d.pdf",
+      "status": 200,
+      "finalURL": "https://www.ti.com/lit/an/spra953d/spra953d.pdf",
+      "contentType": "application/pdf",
+      "access": "reachable"
+    },
+    {
+      "url": "https://www.ti.com/video/series/precision-labs.html",
+      "status": 200,
+      "finalURL": "https://www.ti.com/video/series/precision-labs.html",
+      "contentType": "text/html; charset=utf-8",
+      "access": "reachable"
+    },
+    {
+      "url": "https://www.uciexpress.org/ucie-resources",
+      "status": 200,
+      "finalURL": "https://www.uciexpress.org/ucie-resources",
+      "contentType": "text/html; charset=UTF-8",
+      "access": "reachable"
+    },
+    {
+      "url": "https://www.undergraduate.study.cam.ac.uk/courses/engineering-ba-hons-meng",
+      "status": 200,
+      "finalURL": "https://www.undergraduate.study.cam.ac.uk/courses/engineering-ba-hons-meng",
+      "contentType": "text/html; charset=UTF-8",
+      "access": "reachable"
+    },
+    {
+      "url": "https://www.wiley.com/en-ca/electrochemical-methods-fundamentals-and-applications-3rd-edition-p-9781119334057",
+      "status": 200,
+      "finalURL": "https://www.wiley.com/en-ca/electrochemical-methods-fundamentals-and-applications-3rd-edition-p-9781119334057",
+      "contentType": "text/html; charset=utf-8",
+      "access": "reachable"
+    },
+    {
+      "url": "https://www.wiley.com/en-ca/physics-of-semiconductor-devices-4th-edition-p-9781119618003",
+      "status": 200,
+      "finalURL": "https://www.wiley.com/en-ca/physics-of-semiconductor-devices-4th-edition-p-9781119618003",
+      "contentType": "text/html; charset=utf-8",
+      "access": "reachable"
+    },
+    {
+      "url": "https://www.synopsys.com/implementation-and-signoff/test-automation/testmax-atpg.html",
+      "status": 200,
+      "finalURL": "https://www.synopsys.com/implementation-and-signoff/test-automation/testmax-atpg.html",
+      "access": "reachable",
+      "method": "HEAD follow-up"
+    },
+    {
+      "url": "https://eng.auburn.edu/~nelson/courses/elec5250_6250/slides/Test_ATPG.pdf",
+      "status": 200,
+      "finalURL": "https://eng.auburn.edu/~nelson/courses/elec5250_6250/slides/Test_ATPG.pdf",
+      "access": "reachable",
+      "method": "HEAD follow-up"
+    }
+  ],
+  "retiredLinks": [
+    {
+      "url": "https://www.synopsys.com/content/dam/synopsys/implementation%26signoff/datasheets/testMAX-atpg-ds.pdf",
+      "status": 404,
+      "finalURL": "https://www.synopsys.com/content/dam/synopsys/implementation%26signoff/datasheets/testMAX-atpg-ds.pdf",
+      "contentType": "text/html;charset=utf-8",
+      "access": "needs-review",
+      "resolution": "Replaced with official TestMAX HTML and Auburn University's direct fault-coverage lecture; both replacement HEAD requests returned 200."
+    }
+  ],
+  "summary": {
+    "reachable": 98,
+    "unverified": 6,
+    "restricted": 9
+  }
+}
