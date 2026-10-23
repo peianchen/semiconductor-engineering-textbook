@@ -1,36 +1,78 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
-<title id="title">先問層級：兩種不同的前段與後段</title><desc id="desc">產業前段是晶圓製造，內含FEOL元件、MOL接點及BEOL互連；產業後段是組裝封裝與測試。BEOL不是封裝，方框不是元件剖面。</desc>
-<defs><marker id="teal" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" refX="8" refY="5" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#087f79"/></marker><marker id="slate" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" refX="8" refY="5" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#47647b"/></marker><marker id="hold" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" refX="8" refY="5" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#9b4b25"/></marker></defs>
-<style>text{font-family:"Noto Sans CJK TC","Noto Sans TC",sans-serif;fill:#203647}.heading{font-size:33px;font-weight:700}.label{font-size:27px;font-weight:700}.body{font-size:22px}.note{font-size:20px}.box{fill:#edf7f4;stroke:#087f79;stroke-width:2}.info{fill:#f0f4f8;stroke:#47647b;stroke-width:2}.white{fill:white;stroke:#3e877e;stroke-width:2}.holdbox{fill:#fff3e9;stroke:#9b4b25;stroke-width:2}.arrow{fill:none;stroke:#087f79;stroke-width:3;marker-end:url(#teal)}.dash{fill:none;stroke:#47647b;stroke-width:3;stroke-dasharray:7 5;marker-end:url(#slate)}.holdarrow{fill:none;stroke:#9b4b25;stroke-width:3;marker-end:url(#hold)}</style>
-<rect width="1200" height="900" rx="24" fill="#fcfdfb"/>
-<text x="60" y="58" class="heading" >「前段／後段」：先問是在談哪個層級</text>
-<text x="60" y="101" class="body" >相同中文詞，在產業分工與晶圓製程內部，指的範圍不同。</text>
-<rect x="45" y="140" width="1110" height="365" rx="12" class="box"/>
-<text x="75" y="188" class="label" >產業前段：晶圓製造</text>
-<text x="75" y="228" class="body" >晶圓廠內部，再依製程整合範圍區分：</text>
-<rect x="75" y="260" width="315" height="200" rx="12" class="white"/>
-<text x="100" y="304" class="label" >FEOL</text>
-<text x="100" y="346" class="label" >元件形成</text>
-<text x="100" y="390" class="body" >隔離、閘極等模組</text>
-<text x="100" y="427" class="body" >建立電晶體等元件</text>
-<path d="M395 360H427" class="arrow"/>
-<rect x="435" y="260" width="315" height="200" rx="12" class="white"/>
-<text x="460" y="304" class="label" >MOL</text>
-<text x="460" y="346" class="label" >接點與局部互連</text>
-<text x="460" y="390" class="body" >把元件端點接到</text>
-<text x="460" y="427" class="body" >後續互連結構</text>
-<path d="M755 360H787" class="arrow"/>
-<rect x="795" y="260" width="330" height="200" rx="12" class="white"/>
-<text x="820" y="304" class="label" >BEOL</text>
-<text x="820" y="346" class="label" >金屬互連</text>
-<text x="820" y="390" class="body" >導線、通孔與介電層</text>
-<text x="820" y="427" class="body" >連接晶片內部電路</text>
-<path d="M600 509V562" class="arrow"/>
-<text x="635" y="547" class="note" >交付製作完成的晶圓</text>
-<rect x="45" y="580" width="1110" height="170" rx="12" class="info"/>
-<text x="75" y="630" class="label" >產業後段：組裝、封裝與測試</text>
-<text x="75" y="677" class="body" >晶圓測試、切割、晶粒組裝、封裝電連接、封裝後測試等</text>
-<text x="75" y="716" class="note" >實際順序與分工依封裝技術及產品而異；測試也貫穿產品生命週期。</text>
-<text x="60" y="804" class="label" >重點：BEOL ≠ 封裝</text>
-<text x="60" y="844" class="note" >概念分類示意，非元件剖面或唯一流程；FEOL／MOL／BEOL 邊界會依技術與用語慣例調整。</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="815" viewBox="0 0 1200 815" role="img" aria-labelledby="title desc" data-figure-style="sts-flat-v1">
+<title id="title">前段與後段：分類與功能剖面</title>
+<desc id="desc">分圖a區分晶圓製造內的FEOL、MOL、BEOL與產業的組裝封裝後段。分圖b用簡化平面電晶體及接點、三層金屬互連示意功能位置，非真實製程堆疊或比例圖；局部互連邊界依技術而異。</desc>
+<defs>
+<marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+<path d="M1 1 L9 5 L1 9" fill="none" stroke="#2e3d59" stroke-width="1.3"/>
+</marker>
+<marker id="arrowTeal" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+<path d="M1 1 L9 5 L1 9" fill="none" stroke="#4c6d96" stroke-width="1.3"/>
+</marker>
+<marker id="arrowOrange" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+<path d="M1 1 L9 5 L1 9" fill="none" stroke="#b56b28" stroke-width="1.3"/>
+</marker>
+<style>text{font-family:"Noto Sans CJK TC","Noto Sans CJK SC","DejaVu Sans",sans-serif;fill:#2e3d59}.panel{font-size:25px;font-weight:600}.badge{font-family:Arial,sans-serif;font-size:20px;font-weight:700;fill:#ffffff}.label{font-size:22px}.note{font-size:18px;fill:#536781}.small{font-size:20px;fill:#536781}.symbol{font-size:24px;font-style:italic}.strong{font-size:22px;font-weight:600}.step{font-size:17px;letter-spacing:1.2px;fill:#536781}</style>
+</defs>
+<rect width="1200" height="815" fill="white"/>
+<circle cx="55" cy="35" r="19" fill="#7185a6"/>
+<text x="55" y="42" text-anchor="middle" class="badge">1</text>
+<text x="88" y="43" class="panel" text-anchor="start">先辨認語境：產業分工與晶圓內製程</text>
+<line x1="38" y1="64" x2="1162" y2="64" stroke="#c5cfdd" stroke-width="1" />
+<path d="M65 105 V88 H812 V105" fill="none" stroke="#607b9e" stroke-width="1.8" stroke-linejoin="round" />
+<text x="438" y="122" class="strong" text-anchor="middle">產業「前段」：晶圓製造</text>
+<path d="M878 105 V88 H1150 V105" fill="none" stroke="#4c6d96" stroke-width="1.8" stroke-linejoin="round" />
+<text x="1014" y="122" class="strong" text-anchor="middle">產業「後段」</text>
+<rect rx="2" x="70" y="151" width="230" height="96" fill="#91b3d4" stroke="#607b9e" stroke-width="2"/>
+<text x="185" y="187" class="label" text-anchor="middle">FEOL</text>
+<text x="185" y="215" class="note" text-anchor="middle">元件形成</text>
+<rect rx="2" x="335" y="151" width="210" height="96" fill="#edaa60" stroke="#b56b28" stroke-width="2"/>
+<text x="440" y="187" class="label" text-anchor="middle">MOL</text>
+<text x="440" y="215" class="note" text-anchor="middle">接點／局部連接</text>
+<rect rx="2" x="580" y="151" width="230" height="96" fill="#c4d5e7" stroke="#4c6d96" stroke-width="2"/>
+<text x="695" y="187" class="label" text-anchor="middle">BEOL</text>
+<text x="695" y="215" class="note" text-anchor="middle">金屬／介電層互連</text>
+<line x1="305" y1="199" x2="330" y2="199" stroke="#2e3d59" stroke-width="1.8" marker-end="url(#arrow)"/>
+<line x1="550" y1="199" x2="575" y2="199" stroke="#2e3d59" stroke-width="1.8" marker-end="url(#arrow)"/>
+<line x1="822" y1="199" x2="865" y2="199" stroke="#2e3d59" stroke-width="1.8" marker-end="url(#arrow)"/>
+<rect rx="2" x="879" y="151" width="271" height="96" fill="white" stroke="#2e3d59" stroke-width="2"/>
+<text x="1014" y="187" class="label" text-anchor="middle">組裝封裝與測試</text>
+<text x="1014" y="215" class="note" text-anchor="middle">不是晶圓內的 BEOL</text>
+<circle cx="55" cy="305" r="19" fill="#7185a6"/>
+<text x="55" y="312" text-anchor="middle" class="badge">2</text>
+<text x="88" y="313" class="panel" text-anchor="start">功能剖面：元件、接點與多層互連</text>
+<rect rx="2" x="80" y="390" width="620" height="255" fill="#eef2f7" stroke="#c5cfdd" stroke-width="1"/>
+<rect rx="2" x="80" y="645" width="620" height="90" fill="#91b3d4" stroke="#607b9e" stroke-width="2"/>
+<rect rx="2" x="147" y="645" width="176" height="23" fill="#6c90b9" stroke="#607b9e" stroke-width="2"/>
+<rect rx="2" x="431" y="645" width="176" height="23" fill="#6c90b9" stroke="#607b9e" stroke-width="2"/>
+<rect rx="2" x="323" y="638" width="108" height="7" fill="#ffffff" stroke="#7185a6" stroke-width="2"/>
+<rect rx="2" x="323" y="614" width="108" height="24" fill="#c4d5e7" stroke="#4c6d96" stroke-width="2"/>
+<rect rx="2" x="187" y="545" width="20" height="100" fill="#edaa60" stroke="#b56b28" stroke-width="2"/>
+<rect rx="2" x="367" y="545" width="20" height="69" fill="#edaa60" stroke="#b56b28" stroke-width="2"/>
+<rect rx="2" x="547" y="545" width="20" height="100" fill="#edaa60" stroke="#b56b28" stroke-width="2"/>
+<rect rx="2" x="120" y="525" width="160" height="20" fill="#c4d5e7" stroke="#4c6d96" stroke-width="2"/>
+<rect rx="2" x="335" y="525" width="84" height="20" fill="#c4d5e7" stroke="#4c6d96" stroke-width="2"/>
+<rect rx="2" x="495" y="525" width="165" height="20" fill="#c4d5e7" stroke="#4c6d96" stroke-width="2"/>
+<rect rx="2" x="145" y="459" width="245" height="18" fill="#c4d5e7" stroke="#4c6d96" stroke-width="2"/>
+<rect rx="2" x="493" y="459" width="168" height="18" fill="#c4d5e7" stroke="#4c6d96" stroke-width="2"/>
+<rect rx="2" x="158" y="477" width="18" height="48" fill="#c4d5e7" stroke="#4c6d96" stroke-width="2"/>
+<rect rx="2" x="529" y="477" width="18" height="48" fill="#c4d5e7" stroke="#4c6d96" stroke-width="2"/>
+<rect rx="2" x="120" y="397" width="540" height="18" fill="#c4d5e7" stroke="#4c6d96" stroke-width="2"/>
+<rect rx="2" x="346" y="415" width="18" height="44" fill="#c4d5e7" stroke="#4c6d96" stroke-width="2"/>
+<text x="95" y="710" class="label" text-anchor="start">矽基板</text>
+<text x="715" y="413" class="small" text-anchor="start">M3</text>
+<text x="715" y="475" class="small" text-anchor="start">M2</text>
+<text x="715" y="542" class="small" text-anchor="start">M1</text>
+<circle cx="608" cy="406" r="3" fill="#4c6d96" stroke="#4c6d96" stroke-width="2"/>
+<path d="M611 406 H675 V370 H825" fill="none" stroke="#4c6d96" stroke-width="1.8" stroke-linejoin="round" />
+<text x="990" y="385" class="label" text-anchor="middle">BEOL：金屬層與通孔</text>
+<text x="990" y="413" class="note" text-anchor="middle">介電材料分隔互連</text>
+<circle cx="557" cy="583" r="3" fill="#b56b28" stroke="#b56b28" stroke-width="2"/>
+<path d="M560 583 H791 V514 H825" fill="none" stroke="#b56b28" stroke-width="1.8" stroke-linejoin="round" />
+<text x="990" y="510" class="label" text-anchor="middle">MOL：元件接觸</text>
+<text x="990" y="538" class="note" text-anchor="middle">銜接元件與互連</text>
+<circle cx="378" cy="624" r="3" fill="#607b9e" stroke="#607b9e" stroke-width="2"/>
+<path d="M381 624 H791 V638 H825" fill="none" stroke="#607b9e" stroke-width="1.8" stroke-linejoin="round" />
+<text x="990" y="634" class="label" text-anchor="middle">FEOL：電晶體等元件</text>
+<text x="990" y="662" class="note" text-anchor="middle">圖示為簡化平面結構</text>
+<text x="38" y="784" class="note" text-anchor="start">概念剖面，非等比例；省略隔離等細節，非完整電路連線；MOL／BEOL 邊界依技術而異。</text>
 </svg>

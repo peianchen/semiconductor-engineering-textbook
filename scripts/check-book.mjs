@@ -95,14 +95,23 @@ for(const figure of mergedImages){
 let sourceFigures=[];
 try{sourceFigures=await walk(path.join(root,'assets','figures'));}
 catch{errors.push('Source figure directory is missing');}
+const figureStyle=JSON.parse(await readFile(path.join(root,'research','figure-style.json'),'utf8'));
+const figureColors=new Set(Object.values(figureStyle.colors).map(color=>color.toLowerCase()));
+const usedFigures=new Set(expectedFullImages);
 for(const file of sourceFigures){
   const target=path.join(dist,path.relative(root,file));
+  must(usedFigures.has(path.relative(root,file).split(path.sep).join('/')),`Unused source figure: ${path.relative(root,file)}`);
   try{must((await readFile(file)).equals(await readFile(target)),`Stale deployed figure: ${path.relative(root,file)}`);}
   catch{errors.push(`Missing deployed figure: ${path.relative(root,file)}`);}
   if(file.endsWith('.svg')){
     const svg=await readFile(file,'utf8');
     must(/<title\b[^>]*>[^<]+<\/title>/.test(svg)&&/<desc\b[^>]*>[^<]+<\/desc>/.test(svg),`${file}:SVG title or description missing`);
     must(!/<script\b|<foreignObject\b|\son\w+=|(?:href|src)=["']https?:/i.test(svg),`${file}:SVG contains active/external content`);
+    must(svg.includes(`data-figure-style="${figureStyle.id}"`),`${file}:shared figure style identifier missing`);
+    must(!/<(?:linearGradient|radialGradient|filter|image)\b/i.test(svg),`${file}:figure must use flat self-contained vector geometry`);
+    for(const color of svg.match(/#[0-9a-f]{6}\b/gi)||[]){
+      must(figureColors.has(color.toLowerCase()),`${file}:color outside shared palette ${color}`);
+    }
   }
 }
 for(const [file,{html}] of pages){

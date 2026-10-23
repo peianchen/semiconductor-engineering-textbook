@@ -1,0 +1,28 @@
+{
+  "id": "sts-flat-v1",
+  "canvasWidth": 1200,
+  "colors": {
+    "ink": "#2e3d59",
+    "muted": "#536781",
+    "rule": "#c5cfdd",
+    "outline": "#607b9e",
+    "silicon": "#91b3d4",
+    "blueLine": "#4c6d96",
+    "layer": "#c4d5e7",
+    "accentLine": "#b56b28",
+    "accent": "#edaa60",
+    "neutral": "#e4eaf2",
+    "alertTint": "#faead7",
+    "dielectric": "#eef2f7",
+    "dopedRegion": "#6c90b9",
+    "badge": "#7185a6",
+    "white": "#ffffff"
+  },
+  "principles": [
+    "flat geometry",
+    "no gradients or shadows",
+    "original composition",
+    "short labels with explanatory captions",
+    "same visual language across units"
+  ]
+}

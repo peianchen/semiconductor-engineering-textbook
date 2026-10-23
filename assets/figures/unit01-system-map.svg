@@ -1,57 +1,117 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1000" viewBox="0 0 1200 1000" role="img" aria-labelledby="title desc">
-<title id="title">從感測到通訊：跨層系統與課程關係</title><desc id="desc">訊號鏈從感測，經偏壓保護與類比調理、ADC、韌體運算到通訊。下方說明材料製程、元件、電路、架構與產品驗證各自要回答的問題。</desc>
-<defs><marker id="teal" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" refX="8" refY="5" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#087f79"/></marker><marker id="slate" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" refX="8" refY="5" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#47647b"/></marker><marker id="hold" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" refX="8" refY="5" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#9b4b25"/></marker></defs>
-<style>text{font-family:"Noto Sans CJK TC","Noto Sans TC",sans-serif;fill:#203647}.heading{font-size:33px;font-weight:700}.label{font-size:27px;font-weight:700}.body{font-size:22px}.note{font-size:20px}.box{fill:#edf7f4;stroke:#087f79;stroke-width:2}.info{fill:#f0f4f8;stroke:#47647b;stroke-width:2}.white{fill:white;stroke:#3e877e;stroke-width:2}.holdbox{fill:#fff3e9;stroke:#9b4b25;stroke-width:2}.arrow{fill:none;stroke:#087f79;stroke-width:3;marker-end:url(#teal)}.dash{fill:none;stroke:#47647b;stroke-width:3;stroke-dasharray:7 5;marker-end:url(#slate)}.holdarrow{fill:none;stroke:#9b4b25;stroke-width:3;marker-end:url(#hold)}</style>
-<rect width="1200" height="1000" rx="24" fill="#fcfdfb"/>
-<text x="55" y="56" class="heading" >從感測到通訊：一個產品，串起多個學科</text>
-<text x="55" y="99" class="body" >以具有類比感測介面的系統為例；訊號鏈是理解跨層取捨的起點。</text>
-<rect x="50" y="145" width="170" height="155" rx="12" class="box"/>
-<text x="135" y="197" class="label" text-anchor="middle">感測</text>
-<text x="135" y="245" class="body" text-anchor="middle">物理／化學量</text>
-<text x="135" y="278" class="body" text-anchor="middle">轉成電訊號</text>
-<path d="M225 223H252" class="arrow"/>
-<rect x="260" y="145" width="255" height="155" rx="12" class="box"/>
-<text x="387.5" y="190" class="label" text-anchor="middle">偏壓與保護</text>
-<text x="387.5" y="225" class="label" text-anchor="middle">類比調理</text>
-<text x="387.5" y="278" class="body" text-anchor="middle">放大、濾波與驅動</text>
-<path d="M520 223H547" class="arrow"/>
-<rect x="555" y="145" width="150" height="155" rx="12" class="box"/>
-<text x="630" y="197" class="label" text-anchor="middle">ADC</text>
-<text x="630" y="254" class="body" text-anchor="middle">取樣與量化</text>
-<path d="M710 223H737" class="arrow"/>
-<rect x="745" y="145" width="190" height="155" rx="12" class="box"/>
-<text x="840" y="197" class="label" text-anchor="middle">韌體運算</text>
-<text x="840" y="254" class="body" text-anchor="middle">校正與資料處理</text>
-<path d="M940 223H967" class="arrow"/>
-<rect x="975" y="145" width="175" height="155" rx="12" class="box"/>
-<text x="1062.5" y="197" class="label" text-anchor="middle">通訊</text>
-<text x="1062.5" y="254" class="body" text-anchor="middle">傳輸結果</text>
-<rect x="50" y="329" width="1100" height="67" rx="12" class="info"/>
-<text x="600" y="371" class="body" text-anchor="middle">電源、時脈、接地、保護與測試介面支援整條訊號鏈</text>
-<text x="55" y="449" class="label" >同一系統，不同層次的工程問題</text>
-<rect x="55" y="475" width="250" height="67" rx="12" class="box"/>
-<text x="80" y="517" class="label" >材料與製程</text>
-<path d="M315 509H355" class="arrow"/>
-<text x="380" y="517" class="body" >材料特性、製程變異、可製造性與可靠度</text>
-<path d="M180 545V564" class="arrow"/>
-<rect x="55" y="572" width="250" height="67" rx="12" class="box"/>
-<text x="80" y="614" class="label" >元件</text>
-<path d="M315 606H355" class="arrow"/>
-<text x="380" y="614" class="body" >感測靈敏度、電晶體特性、漏電與雜訊來源</text>
-<path d="M180 642V661" class="arrow"/>
-<rect x="55" y="669" width="250" height="67" rx="12" class="box"/>
-<text x="80" y="711" class="label" >電路</text>
-<path d="M315 703H355" class="arrow"/>
-<text x="380" y="711" class="body" >增益、頻寬、輸入範圍、解析度與功耗</text>
-<path d="M180 739V758" class="arrow"/>
-<rect x="55" y="766" width="250" height="67" rx="12" class="box"/>
-<text x="80" y="808" class="label" >架構與韌體</text>
-<path d="M315 800H355" class="arrow"/>
-<text x="380" y="808" class="body" >取樣策略、資料處理、延遲與能源預算</text>
-<path d="M180 836V855" class="arrow"/>
-<rect x="55" y="863" width="250" height="67" rx="12" class="info"/>
-<text x="80" y="905" class="label" >產品驗證</text>
-<path d="M315 897H355" class="arrow"/>
-<text x="380" y="905" class="body" >在實際情境下，量測整體功能、誤差與穩定性</text>
-<text x="55" y="974" class="note" >概念示意，非唯一架構；下方箭頭表示由底層到產品的關聯，不代表只做一次的線性開發流程。</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="855" viewBox="0 0 1200 855" role="img" aria-labelledby="title desc" data-figure-style="sts-flat-v1">
+<title id="title">感測器訊號鏈與跨層工程模型</title>
+<desc id="desc">分圖a顯示感測元件、類比前端、ADC、MCU韌體與選配RF收發器。ADC前為連續電訊號，後為數位資料，RF到天線則為類比射頻訊號；ADC另需參考電壓及取樣時脈。分圖b依序為材料製程、元件、電路、架構韌體、產品驗證，模型與限制向產品傳遞，需求與驗證回饋反向分配。</desc>
+<defs>
+<marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+<path d="M1 1 L9 5 L1 9" fill="none" stroke="#2e3d59" stroke-width="1.3"/>
+</marker>
+<marker id="arrowTeal" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+<path d="M1 1 L9 5 L1 9" fill="none" stroke="#4c6d96" stroke-width="1.3"/>
+</marker>
+<marker id="arrowOrange" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+<path d="M1 1 L9 5 L1 9" fill="none" stroke="#b56b28" stroke-width="1.3"/>
+</marker>
+<style>text{font-family:"Noto Sans CJK TC","Noto Sans CJK SC","DejaVu Sans",sans-serif;fill:#2e3d59}.panel{font-size:25px;font-weight:600}.badge{font-family:Arial,sans-serif;font-size:20px;font-weight:700;fill:#ffffff}.label{font-size:22px}.note{font-size:18px;fill:#536781}.small{font-size:16px;fill:#536781}.symbol{font-size:24px;font-style:italic}.strong{font-size:22px;font-weight:600}.step{font-size:17px;letter-spacing:1.2px;fill:#536781}</style>
+</defs>
+<rect width="1200" height="855" fill="white"/>
+<circle cx="55" cy="35" r="19" fill="#7185a6"/>
+<text x="55" y="42" text-anchor="middle" class="badge">1</text>
+<text x="88" y="43" class="panel" text-anchor="start">感測記錄器：功能訊號鏈</text>
+<line x1="38" y1="64" x2="1162" y2="64" stroke="#c5cfdd" stroke-width="1" />
+<rect rx="2" x="46" y="147" width="156" height="97" fill="#91b3d4" stroke="#607b9e" stroke-width="2"/>
+<text x="124" y="184" class="label" text-anchor="middle">感測元件</text>
+<text x="124" y="212" class="note" text-anchor="middle">溫度 → 電訊號</text>
+<rect rx="2" x="241" y="147" width="206" height="97" fill="#91b3d4" stroke="#607b9e" stroke-width="2"/>
+<text x="344" y="184" class="label" text-anchor="middle">類比前端</text>
+<text x="344" y="212" class="note" text-anchor="middle">偏壓／保護／濾波</text>
+<rect rx="2" x="486" y="147" width="136" height="97" fill="#c4d5e7" stroke="#4c6d96" stroke-width="2"/>
+<text x="554" y="184" class="label" text-anchor="middle">ADC</text>
+<text x="554" y="212" class="note" text-anchor="middle">取樣與量化</text>
+<rect rx="2" x="661" y="147" width="174" height="97" fill="#e4eaf2" stroke="#2e3d59" stroke-width="2"/>
+<text x="748" y="184" class="label" text-anchor="middle">MCU</text>
+<text x="748" y="212" class="note" text-anchor="middle">韌體與運算</text>
+<rect rx="2" x="874" y="147" width="166" height="97" fill="#edaa60" stroke="#b56b28" stroke-width="2"/>
+<text x="957" y="184" class="label" text-anchor="middle">RF 收發器</text>
+<text x="957" y="212" class="note" text-anchor="middle">無線鏈路（選配）</text>
+<line x1="204" y1="196" x2="236" y2="196" stroke="#2e3d59" stroke-width="1.8" marker-end="url(#arrow)"/>
+<line x1="449" y1="196" x2="481" y2="196" stroke="#2e3d59" stroke-width="1.8" marker-end="url(#arrow)"/>
+<line x1="624" y1="196" x2="656" y2="196" stroke="#2e3d59" stroke-width="1.8" marker-end="url(#arrow)"/>
+<line x1="837" y1="196" x2="869" y2="196" stroke="#2e3d59" stroke-width="1.8" marker-end="url(#arrow)"/>
+<line x1="1042" y1="196" x2="1100" y2="196" stroke="#2e3d59" stroke-width="1.8" marker-end="url(#arrow)"/>
+<path d="M1114 225 V166 M1094 164 L1114 183 L1134 164" fill="none" stroke="#b56b28" stroke-width="2" stroke-linejoin="round" />
+<path d="M1141 170 Q1159 194 1141 218 M1151 159 Q1177 194 1151 229" fill="none" stroke="#b56b28" stroke-width="1.5" stroke-linejoin="round" />
+<text x="232" y="129" class="note" text-anchor="middle">連續電訊號</text>
+<text x="742" y="129" class="note" text-anchor="middle">數位碼／資料</text>
+<text x="1096" y="129" class="note" text-anchor="middle">類比 RF</text>
+<text x="558" y="297" class="note" text-anchor="middle">參考電壓／取樣時脈</text>
+<line x1="554" y1="276" x2="554" y2="247" stroke="#4c6d96" stroke-width="1.8" marker-end="url(#arrowTeal)"/>
+<path d="M47 323 V337 H1153 V323" fill="none" stroke="#c5cfdd" stroke-width="1.8" stroke-linejoin="round" />
+<text x="600" y="371" class="note" text-anchor="middle">共同約束：供電、接地、時序、頻寬與熱；功能框可整合於同一晶片。</text>
+<line x1="38" y1="405" x2="1162" y2="405" stroke="#c5cfdd" stroke-width="1" />
+<circle cx="55" cy="438" r="19" fill="#7185a6"/>
+<text x="55" y="445" text-anchor="middle" class="badge">2</text>
+<text x="88" y="446" class="panel" text-anchor="start">分析層級：從物理模型到產品證據</text>
+<line x1="89" y1="497" x2="1116" y2="497" stroke="#4c6d96" stroke-width="1.8" marker-end="url(#arrowTeal)"/>
+<text x="600" y="481" class="note" text-anchor="middle">模型、製造限制與不確定度 →</text>
+<line x1="99" y1="552" x2="132" y2="552" stroke="#607b9e" stroke-width="1.8" />
+<line x1="99" y1="552" x2="99" y2="581" stroke="#607b9e" stroke-width="1.8" />
+<circle cx="99" cy="552" r="5" fill="#91b3d4" stroke="#607b9e" stroke-width="2"/>
+<line x1="99" y1="581" x2="132" y2="581" stroke="#607b9e" stroke-width="1.8" />
+<line x1="99" y1="581" x2="99" y2="610" stroke="#607b9e" stroke-width="1.8" />
+<circle cx="99" cy="581" r="5" fill="#91b3d4" stroke="#607b9e" stroke-width="2"/>
+<line x1="99" y1="610" x2="132" y2="610" stroke="#607b9e" stroke-width="1.8" />
+<circle cx="99" cy="610" r="5" fill="#91b3d4" stroke="#607b9e" stroke-width="2"/>
+<line x1="132" y1="552" x2="165" y2="552" stroke="#607b9e" stroke-width="1.8" />
+<line x1="132" y1="552" x2="132" y2="581" stroke="#607b9e" stroke-width="1.8" />
+<circle cx="132" cy="552" r="5" fill="#91b3d4" stroke="#607b9e" stroke-width="2"/>
+<line x1="132" y1="581" x2="165" y2="581" stroke="#607b9e" stroke-width="1.8" />
+<line x1="132" y1="581" x2="132" y2="610" stroke="#607b9e" stroke-width="1.8" />
+<circle cx="132" cy="581" r="5" fill="#91b3d4" stroke="#607b9e" stroke-width="2"/>
+<line x1="132" y1="610" x2="165" y2="610" stroke="#607b9e" stroke-width="1.8" />
+<circle cx="132" cy="610" r="5" fill="#91b3d4" stroke="#607b9e" stroke-width="2"/>
+<line x1="165" y1="552" x2="165" y2="581" stroke="#607b9e" stroke-width="1.8" />
+<circle cx="165" cy="552" r="5" fill="#91b3d4" stroke="#607b9e" stroke-width="2"/>
+<line x1="165" y1="581" x2="165" y2="610" stroke="#607b9e" stroke-width="1.8" />
+<circle cx="165" cy="581" r="5" fill="#91b3d4" stroke="#607b9e" stroke-width="2"/>
+<circle cx="165" cy="610" r="5" fill="#91b3d4" stroke="#607b9e" stroke-width="2"/>
+<rect rx="2" x="315" y="589" width="102" height="31" fill="#91b3d4" stroke="#607b9e" stroke-width="2"/>
+<rect rx="2" x="326" y="589" width="18" height="11" fill="#6c90b9" stroke="#607b9e" stroke-width="2"/>
+<rect rx="2" x="388" y="589" width="18" height="11" fill="#6c90b9" stroke="#607b9e" stroke-width="2"/>
+<rect rx="2" x="351" y="582" width="29" height="6" fill="#edaa60" stroke="#b56b28" stroke-width="2"/>
+<rect rx="2" x="351" y="563" width="29" height="19" fill="#c4d5e7" stroke="#4c6d96" stroke-width="2"/>
+<line x1="366" y1="549" x2="366" y2="563" stroke="#2e3d59" stroke-width="1.8" />
+<line x1="335" y1="574" x2="335" y2="589" stroke="#2e3d59" stroke-width="1.8" />
+<line x1="397" y1="574" x2="397" y2="589" stroke="#2e3d59" stroke-width="1.8" />
+<path d="M567 550 L567 619 L632 585 Z" fill="#c4d5e7" stroke="#4c6d96" stroke-width="1.8"/>
+<line x1="542" y1="566" x2="567" y2="566" stroke="#2e3d59" stroke-width="1.8" />
+<line x1="542" y1="603" x2="567" y2="603" stroke="#2e3d59" stroke-width="1.8" />
+<line x1="632" y1="585" x2="660" y2="585" stroke="#2e3d59" stroke-width="1.8" />
+<text x="574" y="573" class="small" text-anchor="start">+</text>
+<text x="574" y="609" class="small" text-anchor="start">−</text>
+<rect rx="2" x="785" y="550" width="44" height="28" fill="#e4eaf2" stroke="#2e3d59" stroke-width="2"/>
+<rect rx="2" x="845" y="550" width="44" height="28" fill="#e4eaf2" stroke="#2e3d59" stroke-width="2"/>
+<rect rx="2" x="804" y="596" width="64" height="26" fill="#edaa60" stroke="#b56b28" stroke-width="2"/>
+<line x1="830" y1="564" x2="843" y2="564" stroke="#2e3d59" stroke-width="1.8" marker-end="url(#arrow)"/>
+<path d="M866 579 V588 H838 V595" fill="none" stroke="#2e3d59" stroke-width="1.8" stroke-linejoin="round" />
+<rect rx="2" x="1036" y="542" width="65" height="86" fill="white" stroke="#2e3d59" stroke-width="2"/>
+<rect rx="2" x="1044" y="553" width="49" height="33" fill="#91b3d4" stroke="#607b9e" stroke-width="2"/>
+<path d="M1052 578 L1062 567 L1074 573 L1085 560" fill="none" stroke="#607b9e" stroke-width="1.8" stroke-linejoin="round" />
+<circle cx="1068" cy="608" r="5" fill="#c4d5e7" stroke="#4c6d96" stroke-width="2"/>
+<text x="132" y="669" class="label" text-anchor="middle">材料／製程</text>
+<text x="132" y="697" class="note" text-anchor="middle">常數、幾何與變異</text>
+<line x1="210" y1="585" x2="288" y2="585" stroke="#2e3d59" stroke-width="1.8" marker-end="url(#arrow)"/>
+<text x="366" y="669" class="label" text-anchor="middle">元件</text>
+<text x="366" y="697" class="note" text-anchor="middle">I–V、C–V、雜訊</text>
+<line x1="444" y1="585" x2="522" y2="585" stroke="#2e3d59" stroke-width="1.8" marker-end="url(#arrow)"/>
+<text x="600" y="669" class="label" text-anchor="middle">電路</text>
+<text x="600" y="697" class="note" text-anchor="middle">增益、功耗與誤差</text>
+<line x1="678" y1="585" x2="756" y2="585" stroke="#2e3d59" stroke-width="1.8" marker-end="url(#arrow)"/>
+<text x="834" y="669" class="label" text-anchor="middle">架構／韌體</text>
+<text x="834" y="697" class="note" text-anchor="middle">時序、吞吐與狀態</text>
+<line x1="912" y1="585" x2="990" y2="585" stroke="#2e3d59" stroke-width="1.8" marker-end="url(#arrow)"/>
+<text x="1068" y="669" class="label" text-anchor="middle">產品／驗證</text>
+<text x="1068" y="697" class="note" text-anchor="middle">規格、環境與可靠度</text>
+<line x1="1116" y1="748" x2="89" y2="748" stroke="#2e3d59" stroke-width="1.8" marker-end="url(#arrow)"/>
+<text x="600" y="782" class="note" text-anchor="middle">← 需求分配與驗證回饋</text>
+<text x="38" y="827" class="note" text-anchor="start">圖示為抽象模型，不是矽晶格、製造次序或實測波形；RF 到天線是類比射頻訊號。</text>
 </svg>
