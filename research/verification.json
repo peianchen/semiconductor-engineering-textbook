@@ -5,13 +5,37 @@
   "chapters": 46,
   "appendices": 3,
   "pages": 52,
-  "equations": 1135,
-  "localLinksChecked": 3794,
-  "imageReferencesChecked": 10,
-  "sourceFigureFilesChecked": 5,
-  "externalReferenceURLs": 125,
-  "numericalChecks": 149,
+  "equations": 1139,
+  "localLinksChecked": 3796,
+  "imageReferencesChecked": 14,
+  "sourceFigureFilesChecked": 7,
+  "externalReferenceURLs": 127,
+  "numericalChecks": 153,
   "numericalResults": [
+    {
+      "name": "01 three-bit output codes",
+      "actual": 8,
+      "expected": 8,
+      "passed": true
+    },
+    {
+      "name": "01 ideal three-bit interval V",
+      "actual": 1,
+      "expected": 1,
+      "passed": true
+    },
+    {
+      "name": "01 active duty percent",
+      "actual": 0.4,
+      "expected": 0.4,
+      "passed": true
+    },
+    {
+      "name": "01 timeline zoom ratio",
+      "actual": 100,
+      "expected": 100,
+      "passed": true
+    },
     {
       "name": "04 loaded divider voltage",
       "actual": 6,
@@ -910,8 +934,8 @@
   "chapterStructure": [
     {
       "file": "01-engineering-map.md",
-      "hanCharacters": 9424,
-      "references": 15
+      "hanCharacters": 11688,
+      "references": 17
     },
     {
       "file": "02-engineering-mathematics.md",

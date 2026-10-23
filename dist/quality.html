@@ -42,10 +42,10 @@
 <ul>
 <li>章號 01–46 連續，附錄 90–92 齊全；各章檢查教學結構與至少兩個不同參考網址。字數門檻只是結構底線，不是學術完備性的評分。</li>
 <li>所有公式由 KaTeX 在建置時以錯誤即停止模式排版；同一公式在分章與整本中的重複不計為兩個教材公式。</li>
-<li>149 項數值回歸檢查，涵蓋各章代表性例題及互動功耗／良率模型；本次第01單元增加8項。這不是宣稱已把每一句自然語言轉成形式證明。</li>
+<li>153 項數值回歸檢查，涵蓋各章代表性例題及互動功耗／良率模型；第01單元先前增加8項，本次閱讀重編再補4項。這不是宣稱已把每一句自然語言轉成形式證明。</li>
 <li>所有輸出頁面的本機檔案、JavaScript、字型及內部錨點檢查；檢查重複識別、未排版數學、JavaScript 語法及搜尋索引項目。</li>
 <li>ZIP 完整性及資源清單檢查；49 個章節與附錄均進入搜尋索引。</li>
-<li>第01單元的5個原創圖檔已加入單章、合冊及離線包；檢查非空替代文字、尺寸、圖片路徑、原檔與輸出檔及ZIP內容一致性。5張SVG另檢查標題、描述、共用風格識別與色盤及無外部或主動執行內容。</li>
+<li>第01單元的7個原創圖檔已加入單章、合冊及離線包；檢查非空替代文字、尺寸、圖片路徑、原檔與輸出檔及ZIP內容一致性。7張SVG另檢查標題、描述、共用風格識別與色盤及無外部或主動執行內容。</li>
 <li>依賴套件安全查核本次回報零項已知問題，不表示未來永遠沒有弱點。</li>
 </ul>
 <p>最新產出數量見 <a href="book-manifest.json">建置清單</a>。詳細機器檢查結果保存在原始專案的 research/verification.json，數值案例在 scripts/numerical-cases.mjs。</p>
@@ -54,7 +54,7 @@
 <p>檢查中修正了誤連年報的 CMP 引用、失效的記憶體教育 PDF、舊版亞穩態頁與 ATPG PDF，並補入直接支持相應段落的 MIT、Stanford、Berkeley、Auburn 及 IEEE 資料。所有新增文字與例題獨立組織，沒有移植來源圖表；引用不表示來源作者背書或轉讓原權利。</p>
 <p>全書引用另做 HTTP 可達性掃描。部分 IUPAC、RSC、Arm、設備商及學校網站回傳存取限制；部分 ADI、Microchip 或大學伺服器逾時。受限或逾時不直接等於永久失效，也不被記成全文查證通過。原始結果與替代紀錄保存在 research/reference-access.json。</p>
 <h2>尚未完成的驗證層級</h2>
-<p>第01單元已先完成深入擴編：新增產業／製造全景、追溯與品質判定、跨學科路徑、3組完整算例、8題附解答練習及5張原創圖。最新圖稿統一為5張重新設計的SVG，均已本機渲染並目視檢查；採扁平藍橘工程風格，不沿用既有圖片。前一版的AI概念插圖已被可校正的向量剖面替換，可由Git歷史還原。其餘章節仍是前版正文，尚未完成同等逐單元圖解擴編。圖像與來源紀錄保存在原始專案的 research/unit-01-editorial.md 與 research/unit-01-sources.md。</p>
+<p>第01單元已先完成深入擴編：新增產業／製造全景、追溯與品質判定、跨學科路徑、3組完整算例、8題附解答練習及7張原創SVG圖。本次把訊號鏈與分析層級拆開，另補工作／睡眠時間圖；原圖與新調整圖均已本機渲染並目視檢查；採扁平藍橘工程風格，不沿用既有圖片。前一版的AI概念插圖已被可校正的向量剖面替換，可由Git歷史還原。第一章另完成保留式重編，需求、物件、訊號、製造、算例與學科連成主線；對照基線102個非標題區塊，97個原樣保留、3個銜接調整、2個圖文拆分，8題解答及15筆原引用不變。完整對照保存在research/unit-01-restructure-map.md與unit-01-restructure-audit.json。其餘章節仍是前版正文，尚未完成同等逐單元圖解擴編。圖像與來源紀錄保存在原始專案的 research/unit-01-editorial.md 與 research/unit-01-sources.md。</p>
 <p>本環境沒有啟用的瀏覽器，因此沒有實際桌機／手機瀏覽器視覺與互動驗收；已檢查程式中的焦點、目錄、搜尋及離線資源，但不宣稱已用真實瀏覽器點過全部操作。也沒有驗收 PDF 分頁、實體電路、SPICE、晶圓製程或生物實驗。</p>
 <p>正式課程採用前宜由相應領域教師再審；危險設備與化學、生物操作需依實驗室規程及訓練。發現問題時應保留章名、公式或例題位置及所用條件，以便修訂而不破壞追溯。</p>
 </article><footer><span>半導體・電子・電機工程 · 2026 學習版</span><a href="quality.html">檢查紀錄</a><a href="chapters/92-bibliography.html">學術資料與編寫說明</a></footer></main><dialog id="searchDialog" class="search-dialog" aria-labelledby="searchLabel"><form method="dialog"><button aria-label="關閉搜尋">關閉</button></form><label id="searchLabel" for="searchInput">搜尋章節、術語與全文</label><input id="searchInput" type="search" placeholder="例如：跨導、混疊、Debye、良率" autocomplete="off"><p id="searchCount" aria-live="polite"></p><div id="searchResults"></div></dialog><script defer src="assets/search-index.js"></script><script defer src="assets/models.js"></script><script defer src="assets/book.js"></script></body></html>

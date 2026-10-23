@@ -8,18 +8,18 @@
 
 | 概念 | 新章位置 |
 |---|---|
-| 產業角色、設備與材料、EDA／IP | 第 2 節 |
-| 設計、光罩、投片、晶圓製造、測試、封裝與出貨 | 第 3 節、圖 1-1 |
-| 晶圓、晶粒、封裝、切割道、邊緣與成本 | 第 4、11 節、圖 1-2 |
-| 產業前後段與晶圓內 FEOL／MOL／BEOL | 第 5 節、圖 1-3 |
-| Lot、Route、Recipe 與追溯 | 第 6、7 節、圖 1-4 |
-| 重複製程、量測、隔離與核准返工 | 第 7 節 |
-| 產能、等待、在製品與交期 | 第 12 節 |
+| 產業角色、設備與材料、EDA／IP | 第 4.2 節 |
+| 設計、光罩、投片、晶圓製造、測試、封裝與出貨 | 第 4.1 節、圖 1-3 |
+| 晶圓、晶粒、封裝、切割道、邊緣與成本 | 第 2、6.2 節、圖 1-1 |
+| 產業前後段與晶圓內 FEOL／MOL／BEOL | 第 5.1 節、圖 1-4 |
+| Lot、Route、Recipe 與追溯 | 第 5.2、5.3 節、圖 1-5 |
+| 重複製程、量測、隔離與核准返工 | 第 5.2 節 |
+| 產能、等待、在製品與交期 | 第 6.3 節 |
 | 可驗收規格與典型／保證／實測值 | 第 1 節 |
-| 訊號鏈、跨層參數與三類科系學習路徑 | 第 8、9 節、圖 1-5 |
-| 原新章的省電算例、ADC 練習與模型檢查 | 第 10、13 節、練習 4、5 |
+| 訊號鏈、跨層參數與三類科系學習路徑 | 第 3、7 節、圖 1-2 與 1-7 |
+| 省電算例、ADC 先備與練習、模型檢查 | 第 6.1、3.2、6.4 節、圖 1-6、練習 4、5 |
 
-原對應概觀單元有 2 個註解中的圖稿占位及 2 條文字箭頭流程，沒有實際嵌入圖片；占位不計為圖片。第一版新增 5 張圖（1 張 AI 概念插圖、4 張 SVG）；依使用者後續風格回饋，現行五張已全部換成獨立繪製的 SVG。新增良率／成本及 Little's law 算例，合計 3 組完整算例、8 題練習及解答。
+原對應概觀單元有 2 個註解中的圖稿占位及 2 條文字箭頭流程，沒有實際嵌入圖片；占位不計為圖片。第一版新增 5 張圖（1 張 AI 概念插圖、4 張 SVG）；依使用者後續風格回饋，五張全部換成獨立繪製的 SVG；本次閱讀重編拆開雙分圖並增加一張時間圖，現行共七張。新增良率／成本及 Little's law 算例，合計 3 組完整算例、8 題練習及解答。
 
 初稿比較採同一規則計算 Markdown 中的漢字，排除 HTML 註解、包含標題、圖說及參考資料：原對應概觀 1,741 字，前一版第 01 章 1,954 字，新稿約 8,900 字。最終字數會隨引用及校訂改變；字數不是深度或完整性的證明。
 
@@ -31,7 +31,9 @@
 | assets/figures/unit01-wafer-die-package.svg | 重新設計的扁平向量俯視與剖面；替換先前PNG | 晶圓／裸晶／單晶粒打線 BGA；封膠填覆、非等比例、非完整走線 |
 | assets/figures/unit01-front-back.svg | 原創向量分類與功能剖面 | 晶圓內 BEOL 不等於封裝後段，省略細節與剖面外連線 |
 | assets/figures/unit01-process-control.svg | 原創蝕刻剖面與品質流程 | 理想選擇性；異常先隔離判定，返工需核准 |
-| assets/figures/unit01-system-map.svg | 原創向量關係圖 | 訊號鏈與跨層分析，不把功能框等同獨立晶片 |
+| assets/figures/unit01-system-map.svg | 原雙分圖的跨層分析部分，獨立配置畫布 | 模型層級不是製造次序，保留雙向資訊關係 |
+| assets/figures/unit01-signal-chain.svg | 原雙分圖的訊號鏈部分，獨立配置畫布 | 不把功能框等同獨立晶片；RF到天線為類比 |
+| assets/figures/unit01-duty-cycle.svg | 新繪狀態時間圖 | 時間尺度、0.4%工作占比與100倍局部放大；不是實測波形 |
 
 圖像皆為教學示意，不是顯微影像、實測數據、比例尺正確的結構或設備操作配方。逐圖檢查圖義、文字、箭頭與正文一致性；SVG 另經本機渲染檢視。圖像檢視不等於完整桌機／手機瀏覽器驗收。
 
@@ -39,7 +41,7 @@
 
 使用者指定最早 chenwei810 教材的圖為視覺參考，並進一步確認「不要長一樣但是風格差不多」。已檢視本機原始庫68c6d00中的正文晶圓圖、封面及圖片規範，採納一般視覺特徵：扁平幾何、藍橘對比、整齊對齊、簡潔編號；沒有複製原SVG路徑、圖案座標或原圖中的缺陷分佈。正文晶圓圖與封面的漸層光澤分開理解，現行教材不採用後者。畫布、構圖、流程、剖面、文字及例子均依本章重新設計。
 
-現行契約是 [figure-style-guide.md](figure-style-guide.md) 與 [figure-style.json](figure-style.json)，風格識別 `sts-flat-v1`。物件圖以編號對照圖說，流程圖保留必要短詞，長解釋放正文。五張圖同樣使用白底、藍色層次、橘色重點、無陰影／漸層；後續各單元延續這套新教材規範，不要求相同布局。
+現行契約是 [figure-style-guide.md](figure-style-guide.md) 與 [figure-style.json](figure-style.json)，風格識別 `sts-flat-v1`。物件圖以編號對照圖說，流程圖保留必要短詞，長解釋放正文。七張圖同樣使用白底、藍色層次、橘色重點、無陰影／漸層；後續各單元延續這套新教材規範，不要求相同布局。
 
 此次沒有新的點陣影像生成呼叫：imagegen技能的原生向量分流適合精準剖面與標註，因此全部以SVG繪製。先前未發布的paper風格PNG草稿不納入教材；原已發布PNG被新SVG取代，可由Git歷史恢復。
 
@@ -63,6 +65,10 @@ Text, verbatim only: beneath each corresponding panel use the labels "WAFER", "D
 Scientific constraints: the objects are conceptual object levels, not equal-scale drawings or a literal one-step production process. The die must not turn into another wafer. Panel 1 is a full circular wafer with many dies; panel 2 is one bare die; panel 3 contains one die inside the larger package.
 Avoid: product logos, watermarks, decorative science symbols, percentages, dimension annotations, fabricated measurements, photorealistic claims, extra objects, extra panels.
 ```
+
+## 保留式閱讀重編
+
+本次以需求→物件→訊號→IC生命週期→晶圓廠→算例→學科順序重編，完整段落對照、例外及檢查方法見 [unit-01-restructure-map.md](unit-01-restructure-map.md)。只修改第一章；舊知識與限制保留，另補先備、銜接與圖解。
 
 ## 檢查界線
 

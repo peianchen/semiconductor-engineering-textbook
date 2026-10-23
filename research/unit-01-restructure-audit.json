@@ -1,0 +1,16 @@
+{
+  "baselineCommit": "84728572b3b18a44bb32549f8a09b4b2b43eecd5",
+  "file": "content/01-engineering-map.md",
+  "baselineNonHeadingBlocks": 102,
+  "unchangedBlocksIgnoringWhitespaceAndFigureNumber": 97,
+  "connectionOnlyEdits": 3,
+  "combinedFigureBlocksSplitAndChecked": 2,
+  "originalTablesPreserved": 5,
+  "originalDisplayEquationsPreserved": 6,
+  "originalReferencesPreserved": 15,
+  "exerciseSectionUnchanged": true,
+  "currentFigureCount": 7,
+  "baselineHanCharacters": 9424,
+  "currentHanCharacters": 11688,
+  "errors": []
+}

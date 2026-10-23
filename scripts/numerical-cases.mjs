@@ -1,5 +1,9 @@
 // Independently evaluated teaching examples; rounded targets use explicit tolerance.
 export const cases = [
+['01 three-bit output codes',2**3,8],
+['01 ideal three-bit interval V',8/(2**3),1],
+['01 active duty percent',4/1000*100,.4],
+['01 timeline zoom ratio',(1000/10)/(1000/1000),100],
 ['04 loaded divider voltage',12*(1/(1/4000+1/4000))/(2000+1/(1/4000+1/4000)),6],
 ['04 load power mW',6**2/4000*1000,9],
 ['04 source power mW',12*.003*1000,36],

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="590" viewBox="0 0 1200 590" role="img" aria-labelledby="title desc" data-figure-style="sts-flat-v1">
+<title id="title">記錄器工作與睡眠的時間分配</title>
+<desc id="desc">完整週期1000毫秒按比例繪製：前4毫秒以12毫安工作，其餘996毫秒以8微安睡眠。下列另放大前10毫秒，以不同時間尺顯示4毫秒工作與6毫秒睡眠；這不是電流波形，色塊高度不表示電流。</desc>
+<style>text{font-family:"Noto Sans CJK TC","Noto Sans CJK SC","DejaVu Sans",sans-serif;fill:#2e3d59}.panel{font-size:25px;font-weight:600}.label{font-size:22px}.note{font-size:20px;fill:#536781}.badge{font-family:Arial,sans-serif;font-size:20px;font-weight:700;fill:#ffffff}</style>
+<rect width="1200" height="590" fill="#ffffff"/>
+<circle cx="55" cy="35" r="19" fill="#7185a6"/>
+<text x="55" y="42" text-anchor="middle" class="badge">1</text>
+<text x="88" y="43" class="panel">完整週期：1000 ms（1 s）</text>
+<line x1="38" y1="64" x2="1162" y2="64" stroke="#c5cfdd"/>
+<rect x="100" y="135" width="1000" height="58" fill="#91b3d4" stroke="#607b9e" stroke-width="2"/>
+<rect x="100" y="135" width="4" height="58" fill="#edaa60"/>
+<path d="M102 133 V94 H230" fill="none" stroke="#b56b28" stroke-width="2"/>
+<text x="240" y="101" class="note">工作 4 ms，僅占 0.4%</text>
+<text x="604" y="171" text-anchor="middle" class="label">睡眠 996 ms</text>
+<path d="M100 199 V211 M1100 199 V211" stroke="#607b9e" stroke-width="2"/>
+<text x="100" y="239" text-anchor="middle" class="note">0 ms</text>
+<text x="1100" y="239" text-anchor="middle" class="note">1000 ms</text>
+<text x="600" y="277" text-anchor="middle" class="note">上方全寬代表 1000 ms；下方相同寬度只代表前 10 ms。</text>
+<circle cx="55" cy="325" r="19" fill="#7185a6"/>
+<text x="55" y="332" text-anchor="middle" class="badge">2</text>
+<text x="88" y="333" class="panel">局部放大：前 10 ms（時間尺為上圖的 100 倍）</text>
+<line x1="38" y1="354" x2="1162" y2="354" stroke="#c5cfdd"/>
+<rect x="100" y="395" width="400" height="58" fill="#edaa60" stroke="#b56b28" stroke-width="2"/>
+<rect x="500" y="395" width="600" height="58" fill="#91b3d4" stroke="#607b9e" stroke-width="2"/>
+<text x="300" y="432" text-anchor="middle" class="label">工作：12 mA</text>
+<text x="800" y="432" text-anchor="middle" class="label">睡眠：8 µA</text>
+<path d="M100 459 V471 M500 459 V471 M1100 459 V471" stroke="#607b9e" stroke-width="2"/>
+<text x="100" y="499" text-anchor="middle" class="note">0 ms</text>
+<text x="500" y="499" text-anchor="middle" class="note">4 ms</text>
+<text x="1100" y="499" text-anchor="middle" class="note">10 ms</text>
+<text x="600" y="552" text-anchor="middle" class="note">色塊高度只用來辨認狀態，不代表電流大小；本圖不是實測波形。</text>
+</svg>
