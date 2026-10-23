@@ -2,14 +2,14 @@
   "title": "半導體・電子・電機工程",
   "chapters": 46,
   "appendices": 3,
-  "hanCharacters": 58744,
-  "equations": 1121,
+  "hanCharacters": 65975,
+  "equations": 1135,
   "generatedPages": 52,
   "documents": [
     {
       "file": "01-engineering-map.md",
       "title": "第 01 章　從需求到晶片：建立工程學科地圖",
-      "characters": 1954,
+      "characters": 9185,
       "group": "數理與電路基礎"
     },
     {

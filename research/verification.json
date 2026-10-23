@@ -5,10 +5,12 @@
   "chapters": 46,
   "appendices": 3,
   "pages": 52,
-  "equations": 1121,
-  "localLinksChecked": 3766,
-  "externalReferenceURLs": 113,
-  "numericalChecks": 141,
+  "equations": 1135,
+  "localLinksChecked": 3794,
+  "imageReferencesChecked": 10,
+  "sourceFigureFilesChecked": 5,
+  "externalReferenceURLs": 125,
+  "numericalChecks": 149,
   "numericalResults": [
     {
       "name": "04 loaded divider voltage",
@@ -665,6 +667,54 @@
       "passed": true
     },
     {
+      "name": "01 usable wafer area mm2",
+      "actual": 28352.873698647883,
+      "expected": 28352.87369865,
+      "passed": true
+    },
+    {
+      "name": "01 wafer-test good dies",
+      "actual": 192,
+      "expected": 192,
+      "passed": true
+    },
+    {
+      "name": "01 expected delivered dies",
+      "actual": 182.39999999999998,
+      "expected": 182.4,
+      "passed": true
+    },
+    {
+      "name": "01 delivered cost",
+      "actual": 15.263157894736842,
+      "expected": 15.2631578947,
+      "passed": true
+    },
+    {
+      "name": "01 Little law cycle days",
+      "actual": 30,
+      "expected": 30,
+      "passed": true
+    },
+    {
+      "name": "01 Little law faster cycle days",
+      "actual": 24,
+      "expected": 24,
+      "passed": true
+    },
+    {
+      "name": "01 exercise 6 improved delivered cost",
+      "actual": 14.5,
+      "expected": 14.5,
+      "passed": true
+    },
+    {
+      "name": "01 exercise 7 larger WIP cycle days",
+      "actual": 40,
+      "expected": 40,
+      "passed": true
+    },
+    {
       "name": "40 deliverable dies",
       "actual": 516.2941246217918,
       "expected": 516.29412462,
@@ -860,8 +910,8 @@
   "chapterStructure": [
     {
       "file": "01-engineering-map.md",
-      "hanCharacters": 1954,
-      "references": 2
+      "hanCharacters": 9185,
+      "references": 15
     },
     {
       "file": "02-engineering-mathematics.md",

@@ -15,6 +15,10 @@
 - **下載離線 HTML：**[下載 ZIP](dist/engineering-textbook-html.zip?raw=true)，解壓縮後開啟 `index.html`，不需安裝開發工具；包含搜尋、深淺色與分章閱讀。
 - **先了解品質與限制：**[檢查紀錄](research/quality-report.md)與[機器驗證結果](research/verification.json)。程式檢查不代表外部專家審查或實體實驗驗證。
 
+## 逐單元圖解擴編
+
+目前先完成[第01單元：從需求到晶片](content/01-engineering-map.md)：整合製造全景與跨學科學習地圖，加入5張全新圖解、3組完整算例及8題附解答練習。HTML 圖片可開啟原尺寸，亦包含在離線包中。其他章節尚未完成同等擴編，會逐單元校訂，不把全書現況誤稱為每章皆已圖解完成。
+
 ## 建置與檢查
 
 ```sh

@@ -23,6 +23,26 @@ const sections = [
 const esc = (s) => String(s).replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('>', '&gt;').replaceAll('"', '&quot;');
 const plain = (s) => s.replace(/<[^>]*>/g, '').replace(/\[([^\]]+)\]\([^)]*\)/g, '$1').replace(/[*#$`]/g, '').replace(/\s+/g, ' ').trim();
 const json = (v) => JSON.stringify(v).replaceAll('<', '\\u003c');
+function figureURL(href, full = false) {
+  if (!/^\.\.\/assets\/figures\/[a-z0-9][a-z0-9._-]*\.(svg|png)$/i.test(href)) throw new Error(`Unsupported textbook figure URL: ${href}`);
+  return full ? href.slice(3) : href;
+}
+const figureSizes = new Map();
+for (const name of await readdir(path.join(root,'assets','figures'))) {
+  if (!/\.(svg|png)$/i.test(name)) continue;
+  const data = await readFile(path.join(root,'assets','figures',name));
+  let width, height;
+  if (name.endsWith('.png')) {
+    if (data.subarray(0,8).toString('hex') !== '89504e470d0a1a0a') throw new Error(`Invalid PNG: ${name}`);
+    width=data.readUInt32BE(16); height=data.readUInt32BE(20);
+  } else {
+    const box=data.toString().match(/viewBox="0 0 ([\d.]+) ([\d.]+)"/);
+    if (!box) throw new Error(`Figure requires zero-origin viewBox: ${name}`);
+    width=Number(box[1]); height=Number(box[2]);
+  }
+  if (!(width>0 && height>0)) throw new Error(`Invalid figure dimensions: ${name}`);
+  figureSizes.set(name,{width,height});
+}
 const names = (await readdir(content)).filter(n => /^\d{2}-[a-z0-9-]+\.md$/.test(n)).sort();
 const docs = await Promise.all(names.map(async file => {
   const md = await readFile(path.join(content, file), 'utf8');
@@ -51,6 +71,14 @@ function render(doc, full = false) {
     { name:'blockMath', level:'block', start:s=>s.indexOf('$$'), tokenizer(s){ const m=/^\$\$\s*\n([\s\S]*?)\n\$\$(?:\n|$)/.exec(s); if(m)return {type:'blockMath',raw:m[0],text:m[1]}; }, renderer:t=>`<div class="equation">${formula(t.text,true)}</div>\n` },
     { name:'inlineMath', level:'inline', start:s=>s.indexOf('$'), tokenizer(s){ const m=/^\$([^$\n]+?)\$(?!\$)/.exec(s); if(m)return {type:'inlineMath',raw:m[0],text:m[1]}; }, renderer:t=>formula(t.text,false) },
   ], renderer: {
+    image({href,title,text}) {
+      const alt=String(text).replace(/<[^>]*>/g,'').trim();
+      if (!alt) throw new Error(`${doc.file}: figure requires descriptive alt text`);
+      const url=figureURL(href,full);
+      const size=figureSizes.get(path.basename(href));
+      if (!size) throw new Error(`${doc.file}: missing figure ${href}`);
+      return `<a class="figure-link" href="${esc(url)}"><img class="book-figure" src="${esc(url)}" alt="${esc(alt)}" width="${size.width}" height="${size.height}"${title?` title="${esc(title)}"`:''} loading="lazy" decoding="async"><span class="figure-hint">開啟原尺寸圖 ↗</span></a>`;
+    },
     heading({tokens,depth}) {
       const text = this.parser.parseInline(tokens);
       const slug = plain(text).toLowerCase().replace(/[^\p{L}\p{N}]+/gu,'-').replace(/^-|-$/g,'');
@@ -94,6 +122,7 @@ await mkdir(path.join(out,'assets','katex'),{recursive:true});
 await cp(path.join(root,'src','book.css'),path.join(out,'assets','book.css'));
 await cp(path.join(root,'src','book.js'),path.join(out,'assets','book.js'));
 await cp(path.join(root,'src','models.js'),path.join(out,'assets','models.js'));
+await cp(path.join(root,'assets','figures'),path.join(out,'assets','figures'),{recursive:true});
 await writeFile(path.join(out,'assets','search-index.js'),`window.BOOK_INDEX=${json(searchIndex)};\n`);
 await cp(path.join(root,'node_modules','katex','dist','katex.min.css'),path.join(out,'assets','katex','katex.min.css'));
 await cp(path.join(root,'node_modules','katex','dist','fonts'),path.join(out,'assets','katex','fonts'),{recursive:true});
@@ -119,7 +148,7 @@ const fullToc=`<details class="full-toc"><summary>全書目錄（${chapters.leng
 await writeFile(path.join(out,'all.html'),shell({name:'整本教材',kind:'full-book',body:`<header class="book-title"><div class="eyebrow">完整閱讀與列印版</div><h1>${title}</h1><p>數理基礎 · 元件物理 · 製程 · 電子系統 · 微奈米感測</p></header>${fullToc}<article class="prose">${fullParts.join('')}</article>`}));
 const qualityMD=await readFile(path.join(root,'research','quality-report.md'),'utf8');
 await writeFile(path.join(out,'quality.html'),shell({name:'教材檢查紀錄',kind:'home-page',body:`<article class="prose">${new Marked().parse(qualityMD)}</article>`}));
-await writeFile(path.join(out,'book.md'),docs.map(d=>d.md).join('\n\n---\n\n'));
+await writeFile(path.join(out,'book.md'),docs.map(d=>d.md.replace(/(!\[(?:\\.|[^\]\\])*\]\()\.\.\/assets\/figures\//g,'$1assets/figures/')).join('\n\n---\n\n'));
 const manifest={title,chapters:chapters.length,appendices:docs.length-chapters.length,hanCharacters:count,equations:equationCount/2,generatedPages:docs.length+3,documents:docs.map(d=>({file:d.file,title:d.fullTitle,characters:d.count,group:d.group}))};
 await writeFile(path.join(out,'book-manifest.json'),JSON.stringify(manifest,null,2)+'\n');
 const offline=spawnSync('zip',['-q','-r',path.join(out,'engineering-textbook-html.zip'),'index.html','all.html','quality.html','chapters','assets','book.md','book-manifest.json'],{cwd:out,encoding:'utf8'});

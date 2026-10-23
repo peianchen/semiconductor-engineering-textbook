@@ -5,6 +5,7 @@ import {fileURLToPath} from 'node:url';
 import vm from 'node:vm';
 import {spawnSync} from 'node:child_process';
 import {cases} from './numerical-cases.mjs';
+import {Marked} from 'marked';
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const dist=path.join(root,'dist');
 const draft=process.argv.includes('--draft');
@@ -12,9 +13,25 @@ const manifest=JSON.parse(await readFile(path.join(dist,'book-manifest.json'),'u
 if(!draft){assert.equal(manifest.chapters,46);assert.equal(manifest.appendices,3);}
 const errors=[],chapterReview=[],numbers=[];
 const must=(test,message)=>{if(!test)errors.push(message);};
+const markdownParser=new Marked();
+const chapterFigures=new Map();
+function markdownImages(md){
+  const images=[];
+  markdownParser.walkTokens(markdownParser.lexer(md),token=>{
+    if(token.type==='image')images.push({href:token.href,alt:token.text});
+  });
+  return images;
+}
 for(const doc of manifest.documents){
   const md=await readFile(path.join(root,'content',doc.file),'utf8');
   const n=Number(doc.file.slice(0,2));
+  const figures=markdownImages(md);
+  chapterFigures.set(doc.file,figures);
+  for(const figure of figures){
+    must(figure.alt.replace(/<[^>]*>/g,'').trim().length>0,`${doc.file}:figure has empty alt text`);
+    must(/^\.\.\/assets\/figures\/[a-z0-9][a-z0-9._-]*\.(svg|png)$/i.test(figure.href),`${doc.file}:unsupported figure URL ${figure.href}`);
+  }
+  if(n===1)must(new Set(figures.map(f=>f.href)).size>=5,`${doc.file}:fewer than five distinct figures`);
   if(n>=90)continue;
   const links=[...new Set([...md.matchAll(/\]\((https?:\/\/[^\s)]+)/g)].map(m=>m[1]))];
   must(doc.characters>=1000,`${doc.file}:正文不足1000中文字`);
@@ -35,6 +52,7 @@ const files=await walk(dist),htmlFiles=files.filter(f=>f.endsWith('.html'));
 const pages=new Map();
 const decode=s=>s.replaceAll('&amp;','&').replaceAll('&quot;','"').replaceAll('&#39;',"'").replaceAll('&lt;','<').replaceAll('&gt;','>');
 let localLinks=0;
+let imageReferences=0;
 const external=new Set();
 for(const file of htmlFiles){
   const html=await readFile(file,'utf8');
@@ -48,7 +66,44 @@ for(const file of htmlFiles){
   must(!/chenwei810|Semiconductor_Manufacturing_Introduction|course-notes|images\//i.test(stripped),`${file}:legacy expression/asset in new output`);
   must(html.includes('assets/models.js'),`${file}:calculator dependency missing`);
   must(html.includes('aria-labelledby="searchLabel"'),`${file}:search dialog accessible name missing`);
-  pages.set(file,{html,ids:new Set(ids)});
+  const images=[...stripped.matchAll(/<img\b[^>]*>/gi)].map(m=>{
+    const attr=name=>decode(m[0].match(new RegExp(`\\b${name}=(["'])(.*?)\\1`,'i'))?.[2]||'');
+    const src=attr('src');
+    must(attr('alt').replace(/&nbsp;|&#160;/g,' ').trim().length>0,`${file}:image has empty alt text`);
+    must(attr('loading')==='lazy'&&attr('decoding')==='async',`${file}:image loading/decoding attributes missing`);
+    must(Number(attr('width'))>0&&Number(attr('height'))>0,`${file}:image dimensions missing`);
+    must(/^(?:\.\.\/)?assets\/figures\/[a-z0-9][a-z0-9._-]*\.(svg|png)$/i.test(src),`${file}:unsupported rendered image URL ${src}`);
+    imageReferences++;
+    return src;
+  });
+  pages.set(file,{html,ids:new Set(ids),images});
+}
+const expectedFullImages=[];
+for(const [file,figures] of chapterFigures){
+  const expected=figures.map(f=>f.href);
+  const rendered=pages.get(path.join(dist,'chapters',file.replace(/\.md$/,'.html')))?.images;
+  must(JSON.stringify(rendered)===JSON.stringify(expected),`${file}:chapter figure URLs/count do not match source`);
+  expectedFullImages.push(...expected.map(href=>href.replace(/^\.\.\//,'')));
+}
+must(JSON.stringify(pages.get(path.join(dist,'all.html'))?.images)===JSON.stringify(expectedFullImages),'Full book figure URLs/count do not match source');
+const mergedImages=markdownImages(await readFile(path.join(dist,'book.md'),'utf8'));
+must(JSON.stringify(mergedImages.map(f=>f.href))===JSON.stringify(expectedFullImages),'Merged Markdown figure URLs/count do not match source');
+for(const figure of mergedImages){
+  must(figure.alt.trim().length>0,'Merged Markdown figure has empty alt text');
+  must(files.includes(path.resolve(dist,figure.href)),`Merged Markdown missing figure ${figure.href}`);
+}
+let sourceFigures=[];
+try{sourceFigures=await walk(path.join(root,'assets','figures'));}
+catch{errors.push('Source figure directory is missing');}
+for(const file of sourceFigures){
+  const target=path.join(dist,path.relative(root,file));
+  try{must((await readFile(file)).equals(await readFile(target)),`Stale deployed figure: ${path.relative(root,file)}`);}
+  catch{errors.push(`Missing deployed figure: ${path.relative(root,file)}`);}
+  if(file.endsWith('.svg')){
+    const svg=await readFile(file,'utf8');
+    must(/<title\b[^>]*>[^<]+<\/title>/.test(svg)&&/<desc\b[^>]*>[^<]+<\/desc>/.test(svg),`${file}:SVG title or description missing`);
+    must(!/<script\b|<foreignObject\b|\son\w+=|(?:href|src)=["']https?:/i.test(svg),`${file}:SVG contains active/external content`);
+  }
 }
 for(const [file,{html}] of pages){
   const resourceHTML=html.replace(/<script\b(?![^>]*\bsrc=)[^>]*>[\s\S]*?<\/script>/gi,'');
@@ -86,6 +141,14 @@ near('01 average current, uA',12000*.004+8*.996,55.968);
 near('01 energy/day J',55.968e-6*3*86400,14.5069056);
 near('01 lifetime hours',200/(55.968/1000),3573.471984,1e-6);
 near('01 slower sampling uA',12000*.002+8*.998,31.984);
+near('01 usable wafer area mm2',Math.PI*95**2,28352.87369865);
+near('01 wafer-test good dies',240*.8,192);
+near('01 expected delivered dies',240*.8*.95,182.4);
+near('01 delivered cost',(2400+192*2)/182.4,15.2631578947);
+near('01 Little law cycle days',1200/40,30);
+near('01 Little law faster cycle days',1200/50,24);
+near('01 exercise 6 improved delivered cost',2784/192,14.5);
+near('01 exercise 7 larger WIP cycle days',1600/40,40);
 near('40 deliverable dies',600*Math.exp(-.12)*.98*.99,516.29412462);
 near('40 delivered cost',(5000+1.5*600*Math.exp(-.12))/(600*Math.exp(-.12)*.98*.99),11.23047526);
 near('41 beam stiffness N/m',160e9*16e-6*(2e-6)**3/(4*(160e-6)**3),1.25);
@@ -131,11 +194,17 @@ const zipList=spawnSync('unzip',['-Z1',zipFile],{encoding:'utf8'}).stdout.split(
 const offlineHome=spawnSync('unzip',['-p',zipFile,'index.html'],{encoding:'utf8'}).stdout;
 must(!offlineHome.includes('href="engineering-textbook-html.zip"'),'Offline homepage links to missing nested ZIP');
 for(const relative of files.map(f=>path.relative(dist,f)).filter(f=>!f.endsWith('.zip')))must(zipList.includes(relative),`Offline ZIP missing ${relative}`);
+for(const file of sourceFigures){
+  const relative=path.relative(root,file).split(path.sep).join('/');
+  must(zipList.includes(relative),`Offline ZIP missing source figure ${relative}`);
+  const archived=spawnSync('unzip',['-p',zipFile,relative],{maxBuffer:32*1024*1024});
+  must(archived.status===0&&Buffer.isBuffer(archived.stdout)&&archived.stdout.equals(await readFile(file)),`Offline ZIP figure differs from source: ${relative}`);
+}
 for(const name of ['book.js','models.js'])must(await readFile(path.join(root,'src',name),'utf8')===await readFile(path.join(dist,'assets',name),'utf8'),`Stale deployed JS: ${name}`);
 const indexContext=vm.createContext({window:{}});vm.runInContext(await readFile(path.join(dist,'assets','search-index.js'),'utf8'),indexContext);
 must(indexContext.window.BOOK_INDEX.length===manifest.documents.length,'Search index missing chapters');
 for(const item of indexContext.window.BOOK_INDEX)must(files.includes(path.join(dist,item.url)),`Search index broken ${item.url}`);
-const report={offlineZipIntegrity:zipTest.status===0,searchIndexEntries:indexContext.window.BOOK_INDEX.length,mode:draft?'draft':'release',chapters:manifest.chapters,appendices:manifest.appendices,pages:htmlFiles.length,equations:manifest.equations,localLinksChecked:localLinks,externalReferenceURLs:external.size,numericalChecks:numbers.length,numericalResults:numbers,chapterStructure:chapterReview,errors,browserQA:'Unavailable: no enabled browsers in cua. Static structure, links, equation rendering and model unit tests only; no visual certification.'};
+const report={offlineZipIntegrity:zipTest.status===0,searchIndexEntries:indexContext.window.BOOK_INDEX.length,mode:draft?'draft':'release',chapters:manifest.chapters,appendices:manifest.appendices,pages:htmlFiles.length,equations:manifest.equations,localLinksChecked:localLinks,imageReferencesChecked:imageReferences,sourceFigureFilesChecked:sourceFigures.length,externalReferenceURLs:external.size,numericalChecks:numbers.length,numericalResults:numbers,chapterStructure:chapterReview,errors,browserQA:'Unavailable: no enabled browsers in cua. Static structure, links, equation rendering and model unit tests only; no visual certification.'};
 await writeFile(path.join(root,'research','verification.json'),JSON.stringify(report,null,2)+'\n');
 console.log(JSON.stringify({...report,numericalResults:undefined,chapterStructure:undefined},null,2));
 if(errors.length)process.exitCode=1;

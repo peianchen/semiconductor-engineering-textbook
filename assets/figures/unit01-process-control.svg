@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1050" viewBox="0 0 1200 1050" role="img" aria-labelledby="title desc">
+<title id="title">製程模組與品質判定：有條件前進，而非任意重做</title><desc id="desc">成膜、圖形定義、依路徑選用蝕刻或摻雜、去阻清洗、量測判定；合格進下一模組，異常隔離工程判定，返工須核准。側欄區分Lot、Route與Recipe。</desc>
+<defs><marker id="teal" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" refX="8" refY="5" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#087f79"/></marker><marker id="slate" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" refX="8" refY="5" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#47647b"/></marker><marker id="hold" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" refX="8" refY="5" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#9b4b25"/></marker></defs>
+<style>text{font-family:"Noto Sans CJK TC","Noto Sans TC",sans-serif;fill:#203647}.heading{font-size:33px;font-weight:700}.label{font-size:27px;font-weight:700}.body{font-size:22px}.note{font-size:20px}.box{fill:#edf7f4;stroke:#087f79;stroke-width:2}.info{fill:#f0f4f8;stroke:#47647b;stroke-width:2}.white{fill:white;stroke:#3e877e;stroke-width:2}.holdbox{fill:#fff3e9;stroke:#9b4b25;stroke-width:2}.arrow{fill:none;stroke:#087f79;stroke-width:3;marker-end:url(#teal)}.dash{fill:none;stroke:#47647b;stroke-width:3;stroke-dasharray:7 5;marker-end:url(#slate)}.holdarrow{fill:none;stroke:#9b4b25;stroke-width:3;marker-end:url(#hold)}</style>
+<rect width="1200" height="1050" rx="24" fill="#fcfdfb"/>
+<text x="55" y="55" class="heading" >製程不是一條直線：模組、量測與放行</text>
+<text x="55" y="96" class="body" >每個模組的實際步驟與順序，依材料、元件及整合方案制定。</text>
+<rect x="60" y="135" width="650" height="78" rx="12" class="box"/>
+<text x="85" y="168" class="label" >成膜</text>
+<text x="85" y="197" class="body" >建立待加工的材料層</text>
+<path d="M385 217V240" class="arrow"/>
+<rect x="60" y="248" width="650" height="78" rx="12" class="box"/>
+<text x="85" y="281" class="label" >圖形定義</text>
+<text x="85" y="310" class="body" >例如微影形成選擇性加工區域</text>
+<path d="M385 330V353" class="arrow"/>
+<rect x="60" y="361" width="650" height="92" rx="12" class="box"/>
+<text x="85" y="394" class="label" >蝕刻／摻雜：依路徑選用</text>
+<text x="85" y="437" class="body" >移除材料，或改變指定區域的摻雜狀態</text>
+<path d="M385 457V480" class="arrow"/>
+<rect x="60" y="488" width="650" height="78" rx="12" class="box"/>
+<text x="85" y="521" class="label" >去光阻與清洗</text>
+<text x="85" y="550" class="body" >移除暫時性遮罩或殘留物，準備後續步驟</text>
+<path d="M385 570V593" class="arrow"/>
+<rect x="60" y="601" width="650" height="95" rx="12" class="info"/>
+<text x="85" y="634" class="label" >量測與工程規格判定</text>
+<text x="85" y="680" class="body" >確認尺寸、厚度、缺陷或其他指定品質指標</text>
+<path d="M385 701V776" class="arrow"/>
+<text x="410" y="746" class="body" >合格</text>
+<rect x="60" y="785" width="650" height="84" rx="12" class="box"/>
+<text x="85" y="821" class="label" >放行至下一製程模組</text>
+<text x="85" y="852" class="body" >下一模組可能使用不同材料與操作組合</text>
+<path d="M714 650H760V710H782" class="holdarrow"/>
+<text x="735" y="619" class="note" >不合格</text>
+<rect x="790" y="650" width="355" height="219" rx="12" class="holdbox"/>
+<text x="815" y="691" class="label" >隔離與工程判定</text>
+<text x="815" y="733" class="body" >先釐清異常與影響範圍</text>
+<text x="815" y="776" class="body" >返工須確認可行性</text>
+<text x="815" y="811" class="body" >並依核准流程執行</text>
+<text x="815" y="847" class="note" >也可能維持隔離或判定報廢</text>
+<rect x="790" y="135" width="355" height="418" rx="12" class="info"/>
+<text x="815" y="178" class="label" >三個追溯關鍵字</text>
+<text x="815" y="227" class="body" font-weight="700">Lot：哪一批？</text>
+<text x="815" y="263" class="body" >晶圓批次身分與履歷</text>
+<text x="815" y="327" class="body" font-weight="700">Route：走哪些步驟？</text>
+<text x="815" y="363" class="body" >核准的製程步序與關卡</text>
+<text x="815" y="427" class="body" font-weight="700">Recipe：設備怎麼做？</text>
+<text x="815" y="463" class="body" >設備的操作條件與設定</text>
+<text x="815" y="510" class="note" >三者不能互相取代</text>
+<text x="60" y="925" class="body" font-weight="700">不是每個模組都包含全部步驟，也不是每一步都能返工。</text>
+<text x="60" y="965" class="note" >概念示意，非唯一流程或製程配方；清洗與量測也可能安排在其他關鍵位置。</text>
+<text x="60" y="1000" class="note" >圖中不畫通用回頭箭頭：重做可能改變膜厚、污染狀態、熱預算或元件特性。</text>
+</svg>

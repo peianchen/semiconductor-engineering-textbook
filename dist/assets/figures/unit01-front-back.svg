@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+<title id="title">先問層級：兩種不同的前段與後段</title><desc id="desc">產業前段是晶圓製造，內含FEOL元件、MOL接點及BEOL互連；產業後段是組裝封裝與測試。BEOL不是封裝，方框不是元件剖面。</desc>
+<defs><marker id="teal" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" refX="8" refY="5" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#087f79"/></marker><marker id="slate" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" refX="8" refY="5" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#47647b"/></marker><marker id="hold" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" refX="8" refY="5" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#9b4b25"/></marker></defs>
+<style>text{font-family:"Noto Sans CJK TC","Noto Sans TC",sans-serif;fill:#203647}.heading{font-size:33px;font-weight:700}.label{font-size:27px;font-weight:700}.body{font-size:22px}.note{font-size:20px}.box{fill:#edf7f4;stroke:#087f79;stroke-width:2}.info{fill:#f0f4f8;stroke:#47647b;stroke-width:2}.white{fill:white;stroke:#3e877e;stroke-width:2}.holdbox{fill:#fff3e9;stroke:#9b4b25;stroke-width:2}.arrow{fill:none;stroke:#087f79;stroke-width:3;marker-end:url(#teal)}.dash{fill:none;stroke:#47647b;stroke-width:3;stroke-dasharray:7 5;marker-end:url(#slate)}.holdarrow{fill:none;stroke:#9b4b25;stroke-width:3;marker-end:url(#hold)}</style>
+<rect width="1200" height="900" rx="24" fill="#fcfdfb"/>
+<text x="60" y="58" class="heading" >「前段／後段」：先問是在談哪個層級</text>
+<text x="60" y="101" class="body" >相同中文詞，在產業分工與晶圓製程內部，指的範圍不同。</text>
+<rect x="45" y="140" width="1110" height="365" rx="12" class="box"/>
+<text x="75" y="188" class="label" >產業前段：晶圓製造</text>
+<text x="75" y="228" class="body" >晶圓廠內部，再依製程整合範圍區分：</text>
+<rect x="75" y="260" width="315" height="200" rx="12" class="white"/>
+<text x="100" y="304" class="label" >FEOL</text>
+<text x="100" y="346" class="label" >元件形成</text>
+<text x="100" y="390" class="body" >隔離、閘極等模組</text>
+<text x="100" y="427" class="body" >建立電晶體等元件</text>
+<path d="M395 360H427" class="arrow"/>
+<rect x="435" y="260" width="315" height="200" rx="12" class="white"/>
+<text x="460" y="304" class="label" >MOL</text>
+<text x="460" y="346" class="label" >接點與局部互連</text>
+<text x="460" y="390" class="body" >把元件端點接到</text>
+<text x="460" y="427" class="body" >後續互連結構</text>
+<path d="M755 360H787" class="arrow"/>
+<rect x="795" y="260" width="330" height="200" rx="12" class="white"/>
+<text x="820" y="304" class="label" >BEOL</text>
+<text x="820" y="346" class="label" >金屬互連</text>
+<text x="820" y="390" class="body" >導線、通孔與介電層</text>
+<text x="820" y="427" class="body" >連接晶片內部電路</text>
+<path d="M600 509V562" class="arrow"/>
+<text x="635" y="547" class="note" >交付製作完成的晶圓</text>
+<rect x="45" y="580" width="1110" height="170" rx="12" class="info"/>
+<text x="75" y="630" class="label" >產業後段：組裝、封裝與測試</text>
+<text x="75" y="677" class="body" >晶圓測試、切割、晶粒組裝、封裝電連接、封裝後測試等</text>
+<text x="75" y="716" class="note" >實際順序與分工依封裝技術及產品而異；測試也貫穿產品生命週期。</text>
+<text x="60" y="804" class="label" >重點：BEOL ≠ 封裝</text>
+<text x="60" y="844" class="note" >概念分類示意，非元件剖面或唯一流程；FEOL／MOL／BEOL 邊界會依技術與用語慣例調整。</text>
+</svg>

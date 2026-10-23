@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1000" viewBox="0 0 1200 1000" role="img" aria-labelledby="title desc">
+<title id="title">從感測到通訊：跨層系統與課程關係</title><desc id="desc">訊號鏈從感測，經偏壓保護與類比調理、ADC、韌體運算到通訊。下方說明材料製程、元件、電路、架構與產品驗證各自要回答的問題。</desc>
+<defs><marker id="teal" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" refX="8" refY="5" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#087f79"/></marker><marker id="slate" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" refX="8" refY="5" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#47647b"/></marker><marker id="hold" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" refX="8" refY="5" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#9b4b25"/></marker></defs>
+<style>text{font-family:"Noto Sans CJK TC","Noto Sans TC",sans-serif;fill:#203647}.heading{font-size:33px;font-weight:700}.label{font-size:27px;font-weight:700}.body{font-size:22px}.note{font-size:20px}.box{fill:#edf7f4;stroke:#087f79;stroke-width:2}.info{fill:#f0f4f8;stroke:#47647b;stroke-width:2}.white{fill:white;stroke:#3e877e;stroke-width:2}.holdbox{fill:#fff3e9;stroke:#9b4b25;stroke-width:2}.arrow{fill:none;stroke:#087f79;stroke-width:3;marker-end:url(#teal)}.dash{fill:none;stroke:#47647b;stroke-width:3;stroke-dasharray:7 5;marker-end:url(#slate)}.holdarrow{fill:none;stroke:#9b4b25;stroke-width:3;marker-end:url(#hold)}</style>
+<rect width="1200" height="1000" rx="24" fill="#fcfdfb"/>
+<text x="55" y="56" class="heading" >從感測到通訊：一個產品，串起多個學科</text>
+<text x="55" y="99" class="body" >以具有類比感測介面的系統為例；訊號鏈是理解跨層取捨的起點。</text>
+<rect x="50" y="145" width="170" height="155" rx="12" class="box"/>
+<text x="135" y="197" class="label" text-anchor="middle">感測</text>
+<text x="135" y="245" class="body" text-anchor="middle">物理／化學量</text>
+<text x="135" y="278" class="body" text-anchor="middle">轉成電訊號</text>
+<path d="M225 223H252" class="arrow"/>
+<rect x="260" y="145" width="255" height="155" rx="12" class="box"/>
+<text x="387.5" y="190" class="label" text-anchor="middle">偏壓與保護</text>
+<text x="387.5" y="225" class="label" text-anchor="middle">類比調理</text>
+<text x="387.5" y="278" class="body" text-anchor="middle">放大、濾波與驅動</text>
+<path d="M520 223H547" class="arrow"/>
+<rect x="555" y="145" width="150" height="155" rx="12" class="box"/>
+<text x="630" y="197" class="label" text-anchor="middle">ADC</text>
+<text x="630" y="254" class="body" text-anchor="middle">取樣與量化</text>
+<path d="M710 223H737" class="arrow"/>
+<rect x="745" y="145" width="190" height="155" rx="12" class="box"/>
+<text x="840" y="197" class="label" text-anchor="middle">韌體運算</text>
+<text x="840" y="254" class="body" text-anchor="middle">校正與資料處理</text>
+<path d="M940 223H967" class="arrow"/>
+<rect x="975" y="145" width="175" height="155" rx="12" class="box"/>
+<text x="1062.5" y="197" class="label" text-anchor="middle">通訊</text>
+<text x="1062.5" y="254" class="body" text-anchor="middle">傳輸結果</text>
+<rect x="50" y="329" width="1100" height="67" rx="12" class="info"/>
+<text x="600" y="371" class="body" text-anchor="middle">電源、時脈、接地、保護與測試介面支援整條訊號鏈</text>
+<text x="55" y="449" class="label" >同一系統，不同層次的工程問題</text>
+<rect x="55" y="475" width="250" height="67" rx="12" class="box"/>
+<text x="80" y="517" class="label" >材料與製程</text>
+<path d="M315 509H355" class="arrow"/>
+<text x="380" y="517" class="body" >材料特性、製程變異、可製造性與可靠度</text>
+<path d="M180 545V564" class="arrow"/>
+<rect x="55" y="572" width="250" height="67" rx="12" class="box"/>
+<text x="80" y="614" class="label" >元件</text>
+<path d="M315 606H355" class="arrow"/>
+<text x="380" y="614" class="body" >感測靈敏度、電晶體特性、漏電與雜訊來源</text>
+<path d="M180 642V661" class="arrow"/>
+<rect x="55" y="669" width="250" height="67" rx="12" class="box"/>
+<text x="80" y="711" class="label" >電路</text>
+<path d="M315 703H355" class="arrow"/>
+<text x="380" y="711" class="body" >增益、頻寬、輸入範圍、解析度與功耗</text>
+<path d="M180 739V758" class="arrow"/>
+<rect x="55" y="766" width="250" height="67" rx="12" class="box"/>
+<text x="80" y="808" class="label" >架構與韌體</text>
+<path d="M315 800H355" class="arrow"/>
+<text x="380" y="808" class="body" >取樣策略、資料處理、延遲與能源預算</text>
+<path d="M180 836V855" class="arrow"/>
+<rect x="55" y="863" width="250" height="67" rx="12" class="info"/>
+<text x="80" y="905" class="label" >產品驗證</text>
+<path d="M315 897H355" class="arrow"/>
+<text x="380" y="905" class="body" >在實際情境下，量測整體功能、誤差與穩定性</text>
+<text x="55" y="974" class="note" >概念示意，非唯一架構；下方箭頭表示由底層到產品的關聯，不代表只做一次的線性開發流程。</text>
+</svg>
