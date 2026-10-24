@@ -2,8 +2,8 @@
   "title": "半導體・電子・電機工程",
   "chapters": 46,
   "appendices": 3,
-  "hanCharacters": 68478,
-  "equations": 1139,
+  "hanCharacters": 75240,
+  "equations": 1322,
   "generatedPages": 52,
   "documents": [
     {
@@ -15,7 +15,7 @@
     {
       "file": "02-engineering-mathematics.md",
       "title": "第 02 章　工程數學與量綱",
-      "characters": 1481,
+      "characters": 8243,
       "group": "數理與電路基礎"
     },
     {

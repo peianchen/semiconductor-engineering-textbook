@@ -42,6 +42,15 @@ for(const doc of manifest.documents){
     const adcIntro=md.indexOf('3.2 先備小步驟'),adcPractice=md.indexOf('**練習 5：ADC');
     must(adcIntro>=0&&adcPractice>adcIntro,`${doc.file}:ADC prerequisites must precede practice`);
   }
+  if(n===2){
+    must(new Set(figures.map(f=>f.href)).size>=6,doc.file+':fewer than six distinct figures');
+    must((md.match(/\*\*練習 \d+。/g)||[]).length===12,doc.file+':expected twelve exercises');
+    must((md.match(/\*\*解答。\*\*/g)||[]).length===12,doc.file+':expected twelve solutions');
+    const captions=[...md.matchAll(/^圖 2-(\d+)　/gm)].map(m=>Number(m[1]));
+    must(JSON.stringify(captions)===JSON.stringify([1,2,3,4,5,6]),doc.file+':figure captions not consecutive');
+    const order=['## 1. 先把問題','## 2. 從變化率','## 3. 把守恆律','## 4. 增加節點','## 5. 儀器只有','## 6. 從理想值','## 練習與完整參考解答'].map(t=>md.indexOf(t));
+    must(order.every((v,i)=>v>=0&&(i===0||v>order[i-1])),doc.file+':reading sequence missing or out of order');
+  }
   if(n>=90)continue;
   const links=[...new Set([...md.matchAll(/\]\((https?:\/\/[^\s)]+)/g)].map(m=>m[1]))];
   must(doc.characters>=1000,`${doc.file}:正文不足1000中文字`);

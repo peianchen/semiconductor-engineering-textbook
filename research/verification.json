@@ -5,13 +5,259 @@
   "chapters": 46,
   "appendices": 3,
   "pages": 52,
-  "equations": 1139,
-  "localLinksChecked": 3796,
-  "imageReferencesChecked": 14,
-  "sourceFigureFilesChecked": 7,
-  "externalReferenceURLs": 127,
-  "numericalChecks": 153,
+  "equations": 1322,
+  "localLinksChecked": 3821,
+  "imageReferencesChecked": 26,
+  "sourceFigureFilesChecked": 13,
+  "externalReferenceURLs": 135,
+  "numericalChecks": 194,
   "numericalResults": [
+    {
+      "name": "02 concentration SI conversion",
+      "actual": 9.999999999999998e+21,
+      "expected": 1e+22,
+      "passed": true
+    },
+    {
+      "name": "02 sheet density SI conversion",
+      "actual": 10000000000000000,
+      "expected": 10000000000000000,
+      "passed": true
+    },
+    {
+      "name": "02 dose cm-2",
+      "actual": 4000000000000.0005,
+      "expected": 4000000000000,
+      "passed": true
+    },
+    {
+      "name": "02 total particles",
+      "actual": 40000000000,
+      "expected": 40000000000,
+      "passed": true
+    },
+    {
+      "name": "02 ramp slope V/s",
+      "actual": 49999.99999999999,
+      "expected": 50000,
+      "passed": true
+    },
+    {
+      "name": "02 ramp current mA",
+      "actual": 0.5,
+      "expected": 0.5,
+      "passed": true
+    },
+    {
+      "name": "02 ramp charge nC",
+      "actual": 10,
+      "expected": 10,
+      "passed": true
+    },
+    {
+      "name": "02 ramp initial charge nC",
+      "actual": 2,
+      "expected": 2,
+      "passed": true
+    },
+    {
+      "name": "02 RC initial current uA",
+      "actual": 330,
+      "expected": 330,
+      "passed": true
+    },
+    {
+      "name": "02 RC initial slope V/s",
+      "actual": 3300,
+      "expected": 3300,
+      "passed": true
+    },
+    {
+      "name": "02 RC t99 ms",
+      "actual": 4.605170185988092,
+      "expected": 4.605170186,
+      "passed": true
+    },
+    {
+      "name": "02 RC 10-90 rise ms",
+      "actual": 2.1972245773362196,
+      "expected": 2.197224577,
+      "passed": true
+    },
+    {
+      "name": "02 RC t999 ms",
+      "actual": 6.907755278982137,
+      "expected": 6.907755279,
+      "passed": true
+    },
+    {
+      "name": "02 RC after five tau fraction",
+      "actual": 0.9932620530009145,
+      "expected": 0.993262053,
+      "passed": true
+    },
+    {
+      "name": "02 RC nonzero initial V",
+      "actual": 2.4538772853056825,
+      "expected": 2.453877285,
+      "passed": true
+    },
+    {
+      "name": "02 RC nonzero 90 percent V",
+      "actual": 3.07,
+      "expected": 3.07,
+      "passed": true
+    },
+    {
+      "name": "02 thermal tau seconds",
+      "actual": 10,
+      "expected": 10,
+      "passed": true
+    },
+    {
+      "name": "02 thermal rise at tau K",
+      "actual": 1.2642411176571153,
+      "expected": 1.264241118,
+      "passed": true
+    },
+    {
+      "name": "02 node one residual mA",
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "name": "02 node two residual mA",
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "name": "02 sensitive system perturbed y",
+      "actual": 2,
+      "expected": 2,
+      "passed": true
+    },
+    {
+      "name": "02 sampled charge uC",
+      "actual": 4,
+      "expected": 4,
+      "passed": true
+    },
+    {
+      "name": "02 unequal sample charge uC",
+      "actual": 2,
+      "expected": 2,
+      "passed": true
+    },
+    {
+      "name": "02 derivative noise V/s",
+      "actual": 14.142135623730951,
+      "expected": 14.142135624,
+      "passed": true
+    },
+    {
+      "name": "02 faster derivative noise V/s",
+      "actual": 141.4213562373095,
+      "expected": 141.421356237,
+      "passed": true
+    },
+    {
+      "name": "02 exercise derivative noise V/s",
+      "actual": 14.142135623730951,
+      "expected": 14.142135624,
+      "passed": true
+    },
+    {
+      "name": "02 small area exact ratio",
+      "actual": 0.9803921568627451,
+      "expected": 0.980392157,
+      "passed": true
+    },
+    {
+      "name": "02 small area approximation relative error",
+      "actual": -0.00039999999999997595,
+      "expected": -0.0004,
+      "passed": true
+    },
+    {
+      "name": "02 large area approximation relative error",
+      "actual": -0.03999999999999999,
+      "expected": -0.04,
+      "passed": true
+    },
+    {
+      "name": "02 signed resistance ratio",
+      "actual": 1.0001941747572816,
+      "expected": 1.000194175,
+      "passed": true
+    },
+    {
+      "name": "02 exact worst resistance ratio",
+      "actual": 1.0620618556701031,
+      "expected": 1.062061856,
+      "passed": true
+    },
+    {
+      "name": "02 relative standard uncertainty",
+      "actual": 0.03741657386773942,
+      "expected": 0.037416574,
+      "passed": true
+    },
+    {
+      "name": "02 maximum RC tau ms",
+      "actual": 1.1550000000000002,
+      "expected": 1.155,
+      "passed": true
+    },
+    {
+      "name": "02 maximum RC t99 ms",
+      "actual": 5.318971564816247,
+      "expected": 5.318971565,
+      "passed": true
+    },
+    {
+      "name": "02 worst remaining percent",
+      "actual": 1.8552321784263852,
+      "expected": 1.855232178,
+      "passed": true
+    },
+    {
+      "name": "02 piecewise dose cm-2",
+      "actual": 4000000000000.0005,
+      "expected": 4000000000000,
+      "passed": true
+    },
+    {
+      "name": "02 exercise shrinking area relative error",
+      "actual": -0.009999999999999964,
+      "expected": -0.01,
+      "passed": true
+    },
+    {
+      "name": "02 exercise uncertainty percent",
+      "actual": 1.7320508075688772,
+      "expected": 1.732050808,
+      "passed": true
+    },
+    {
+      "name": "02 exercise exact tolerance ratio",
+      "actual": 1.0304040404040404,
+      "expected": 1.03040404,
+      "passed": true
+    },
+    {
+      "name": "02 fixed offset charge uC",
+      "actual": 1.0000000000000002,
+      "expected": 1,
+      "passed": true
+    },
+    {
+      "name": "02 exercise constant-current delta V",
+      "actual": 1.5,
+      "expected": 1.5,
+      "passed": true
+    },
     {
       "name": "01 three-bit output codes",
       "actual": 8,
@@ -939,8 +1185,8 @@
     },
     {
       "file": "02-engineering-mathematics.md",
-      "hanCharacters": 1481,
-      "references": 3
+      "hanCharacters": 8243,
+      "references": 11
     },
     {
       "file": "03-complex-phasors.md",

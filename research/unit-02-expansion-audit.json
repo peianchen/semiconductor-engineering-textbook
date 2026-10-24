@@ -1,0 +1,16 @@
+{
+  "baselineCommit": "9cbbe40bc9a0f9713a4d6dc47934b7cb4d54387f",
+  "file": "content/02-engineering-mathematics.md",
+  "baselineNonHeadingBlocks": 23,
+  "unchangedBlocksIgnoringWhitespace": 22,
+  "terminologyCorrection": 1,
+  "originalExerciseAndSolutionsPreserved": 2,
+  "originalWorkedExampleUnchanged": true,
+  "originalDisplayEquationsPreserved": 2,
+  "originalReferencesPreserved": 3,
+  "currentExercises": 12,
+  "currentFigures": 6,
+  "baselineHanCharacters": 1481,
+  "currentHanCharacters": 8243,
+  "errors": []
+}
